@@ -58,49 +58,6 @@ export default function NavBar() {
                 Latest
               </a>
             </li>
-
-            {/* <li className="nav-item dropdown"> */}
-              {/* <a
-                className="nav-link dropdown-toggle"
-                href="https://www.google.co.uk/"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="https://www.google.co.uk/">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="https://www.google.co.uk/">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />{" "}
-                </li>
-                <li>
-                  <a className="dropdown-item" href="https://www.google.co.uk/">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li> */}
-            <li className="nav-item">
-              <a
-                className="nav-link disabled"
-                href="https://www.google.co.uk/"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
-              </a>
-            </li>
           </ul>
           <form className="d-flex">
             <input
