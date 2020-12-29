@@ -59,8 +59,8 @@ export default function NavBar() {
               </a>
             </li>
 
-            <li className="nav-item dropdown">
-              <a
+            {/* <li className="nav-item dropdown"> */}
+              {/* <a
                 className="nav-link dropdown-toggle"
                 href="https://www.google.co.uk/"
                 id="navbarDropdown"
@@ -90,7 +90,7 @@ export default function NavBar() {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a
                 className="nav-link disabled"
