@@ -24,6 +24,9 @@ export default function Header() {
         <div className="title-container">
           <h2>A New Leadership</h2>
         </div>
+        <div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
         <div className="form-container">
           <form>
             <p>GET THE LATEST FROM LABOUR</p>
