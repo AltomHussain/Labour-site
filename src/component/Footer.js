@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./Footer.css";
 export default function Footer() {
   return (
     <footer>
-      <div>
+      <div className="first-container">
         <ul>
-          <h3>ABOUT LABOUR</h3>
+          <p>ABOUT LABOUR</p>
           <li>Labour’s Legacy</li>
           <li>How We Work</li>
           <li>Diversifying Our Parliament</li>
@@ -13,9 +13,9 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div>
+      <div className="second-container">
         <ul>
-          <h3>PEOPLE</h3>
+          <p>PEOPLE</p>
           <li>Keir Starmer</li>
           <li>Shadow Cabinet</li>
           <li>Local Government</li>
@@ -27,9 +27,9 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div>
+      <div className="third-container">
         <ul>
-          <h3>MEMBERS</h3>
+          <p>MEMBERS</p>
           <li>Conected</li>
           <li>Why Join Labour?</li>
           <li>New Members</li>
@@ -40,9 +40,9 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div>
+      <div className="fourth-container">
         <ul>
-          <h3>QUICK LINKS</h3>
+          <p>QUICK LINKS</p>
           <li>Access MemberCentre</li>
           <li>Work With Us</li>
           <li>Press</li>
@@ -51,9 +51,9 @@ export default function Footer() {
           <li>Contact</li>
         </ul>
       </div>
-      <div>
+      <div className="fifth-container">
         <span>
-          <strong> The Labour Party</strong>
+          <strong> The Labour Party</strong><br></br>
           Labour Central, Kings Manor<br></br>
           Newcastle upon Tyne
           <br></br> NE1 6PA <br></br>
