@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  background-color: #454545;
+  color: white;
+  justify-content: space-evenly;
+}
+footer span{
+    width: 50%;
+}
+.first-container {
+    text-align: left;
+  width: 50%;
+  margin: 2px;
+}
+.second-container {
+  width: 50%;
+  text-align: left;
+}
+.third-container {
+  width: 50%;
+  text-align: left;
+}
+.fourth-container {
+  width: 50%;
+  text-align: left;
+}
+.fifth-container {
+  width: 50%;
+  text-align: left;
+}
+footer ul li {
+  list-style-type: none;
+  color: #9d9d9c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3px;
+    }
+}

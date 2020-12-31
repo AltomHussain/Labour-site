@@ -3,6 +3,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <header>
+    {/* Here */}
       <div
         style={{
           backgroundImage: `url("https://foreignpolicy.com/wp-content/uploads/2019/09/GettyImages-1170765134.jpg?w=1536")`,
