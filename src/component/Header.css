@@ -27,7 +27,9 @@
 }
 /* Buttons styling */
 .btn-join-labour{
-background-color: #e4003b;;
+background-color: #e4003b;
+color: white;
+
 }
 .btn-take-action{
 background-color: #33bfd4;
