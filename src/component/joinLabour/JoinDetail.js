@@ -1,4 +1,5 @@
 import React from "react";
+import JoinFooter from "./JoinFooter";
 
 export default function JoinDetail() {
   let Address = [
@@ -109,6 +110,7 @@ export default function JoinDetail() {
         </div>
         <button className="btn btn-success">Next</button>
       </form>
+      <JoinFooter />
     </div>
   );
 }

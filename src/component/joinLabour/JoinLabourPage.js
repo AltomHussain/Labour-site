@@ -1,10 +1,10 @@
 import React from "react";
 
-import {Link}  from "react-router-dom"
+import { Link } from "react-router-dom";
+import JoinFooter from "./JoinFooter";
 
 import "./JoinLabourPage.css";
 export default function JoinLabourPage() {
-
   return (
     <div className="join-container">
       <div className="header">
@@ -65,7 +65,9 @@ export default function JoinLabourPage() {
                 <div>
                   <div>
                     {" "}
-                    <Link to="/join-detail"><h3>Age 20 to 26</h3></Link> 
+                    <Link to="/join-detail">
+                      <h3>Age 20 to 26</h3>
+                    </Link>
                   </div>
                   <div>
                     <h3>Required</h3>
@@ -143,42 +145,7 @@ export default function JoinLabourPage() {
               I am already a member. Renew membership{" "}
             </Link>
           </div>
-
-          <footer>
-            <div className="first-col">
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <a href="https://labour.org.uk/terms-and-conditions/">
-                  Terms and conditions
-                </a>
-                <a href="">Privacy policy</a>
-                <a href="">Got a question about membership?</a>
-                <a href="">Join by post</a>
-              </div>
-              <div>
-                {" "}
-                <p>
-                  Powered and hosted by Tangent, a registered trading name of
-                  Tangent Marketing Services Limited, a company registered in
-                  England Wales with number 4323657, for which the registered
-                  office is at 40-44 Clipstone Street, London W1W 5DW. Promoted
-                  by David Evans on behalf of the Labour Party both at
-                  Southside, 105 Victoria Street, London SW1E 6QT. The Labour
-                  Party will place third-party cookies on your computer to help
-                  us make this website better.{" "}
-                </p>
-              </div>
-            </div>
-            <div className="second">Send us feedback</div>
-            <div className="thrid-col">
-              <p>Facebook</p>
-              <p>Twitter</p>
-              <p>YouTube</p>
-              <p>RSS</p>
-            </div>
-          </footer>
+          <JoinFooter />
         </div>
       </div>
     </div>
