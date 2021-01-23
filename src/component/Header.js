@@ -1,9 +1,11 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
-    {/* Here */}
+      {/* Here */}
       <div
         style={{
           backgroundImage: `url("https://foreignpolicy.com/wp-content/uploads/2019/09/GettyImages-1170765134.jpg?w=1536")`,
@@ -13,7 +15,7 @@ export default function Header() {
       >
         <div>
           <button type="button" class="btn  btn-join-labour">
-            JOIN LABOUR
+            <Link to="/join-labour">JOIN LABOUR</Link>
           </button>
           <button type="button" class="btn  btn-take-action">
             TAKE ACTION

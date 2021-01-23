@@ -1,7 +1,12 @@
 import React from "react";
-
+import NavBar from "./NavBar";
+import Header from "./Header";
+import Footer from "./Footer";
 export default function Home() {
   return (
+    <div className="home-container">
+      <NavBar />
+      <Header />
     <div className="home">
       <div className="first-container">
         <h2>See our latest campaigns</h2>
@@ -63,23 +68,33 @@ export default function Home() {
 
         <div className="second-child">
           <div className="become-member">
-            <p><i class="far fa-arrow-alt-circle-right"></i></p>
+            <p>
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </p>
             <p>BECOME A MEMBER</p>
           </div>
           <div className="why-labour">
-            <p><i class="far fa-arrow-alt-circle-right"></i></p>
+            <p>
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </p>
             <p>WHY JOIN LABOUR?</p>
           </div>
           <div className="renew">
-            <p><i class="far fa-arrow-alt-circle-right"></i></p>
+            <p>
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </p>
             <p>RENEW MEMBERSHIP</p>
           </div>
           <div className="access">
-            <p><i class="far fa-arrow-alt-circle-right"></i></p>
+            <p>
+              <i class="far fa-arrow-alt-circle-right"></i>
+            </p>
             <p>ACCESS MY LABOUR</p>
           </div>
         </div>
       </div>
     </div>
+     <Footer />
+     </div>
   );
 }
