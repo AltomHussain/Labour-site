@@ -21,7 +21,7 @@ export default function Header() {
             TAKE ACTION
           </button>
           <button type="button" class="btn btn-donate-now">
-            DONATE NOW
+          <Link to="/donate-party">DONATE NOW</Link>  
           </button>
         </div>
         <div className="title-container">
