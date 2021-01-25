@@ -4,6 +4,7 @@ export default function DonateParty() {
   return (
     <div className="home-container">
       <div className="donate-container">
+          <img src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg" className="donate-logo" />
         <div className="amount-to-donate">
           <h2>Help fund our people powered movement. Donate now.</h2>
           <div>
