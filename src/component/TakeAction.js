@@ -24,17 +24,17 @@ export default function TakeAction() {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Icon Donate <span className="sr-only">(current)</span>
+                <i class="fas fa-gift"></i> Donate <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Icon Join
+                <i class="fas fa-plus-square"></i> Join
                 </a>
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Icon Volunteer
+                <i class="fas fa-users"></i>Volunteer
                 </a>
               </li>
             </ul>
