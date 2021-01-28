@@ -20,6 +20,9 @@ export default function Header() {
           <button type="button" class="btn  btn-take-action">
             TAKE ACTION
           </button>
+          <button type="button" class="btn  btn-take-action">
+            Volunteers
+          </button>
           <button type="button" class="btn btn-donate-now">
             DONATE NOW
           </button>
