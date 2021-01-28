@@ -18,7 +18,7 @@ export default function Header() {
             <Link to="/join-labour">JOIN LABOUR</Link>
           </button>
           <button type="button" class="btn  btn-take-action">
-            TAKE ACTION
+          <Link to="take-action">TAKE ACTION</Link>   
           </button>
           <button type="button" class="btn  btn-take-action">
             Volunteers

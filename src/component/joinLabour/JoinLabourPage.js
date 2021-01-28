@@ -18,7 +18,7 @@ export default function JoinLabourPage() {
       </div>
 
       <div className="container">
-        <h2>Join the Labour Party</h2>
+        <h2><Link to="take-action">helo</Link> Join the Labour Party</h2>
         <p>Help us campaign for a fairer Britain</p>
         <h3>Choose your membership rate</h3>
 
