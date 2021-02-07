@@ -1,0 +1,16 @@
+.home .first-container{
+    background-color: #0072CE;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: black;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.title{
+
+}
