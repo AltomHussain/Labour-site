@@ -1,6 +1,10 @@
 .img-fluid {
   width: 100px;
 }
+.navbar{
+  position: sticky;
+  top: 0;
+}
 .navbar-nav .nav-item ul li {
   list-style-type: none;
   color: white;

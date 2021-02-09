@@ -1,16 +1,198 @@
-.home .first-container{
-    background-color: #0072CE;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    color: black;
-    max-width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: white;
-    border-radius: 5px;
+.home .first-container {
+  background-color: #0072ce;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  color: black;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 5px;
 }
-.title{
+.home .container-1 {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.home .container-1 .second-child {
+  text-align: justify;
 
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+  padding: 20px;
+}
+.sir-image {
+  max-width: 90%;
+}
+.container-2 {
+  background-color: rgb(238, 224, 224);
+  width: 100%;
+  height: 40vh;
+}
+.form {
+  width: 100%;
+}
+.input-search {
+  width: 90%;
+  padding-left: 20px;
+}
+.span {
+  width: 40%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.movement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin-right: 50px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.questions {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+}
+.people-powered {
+  max-width: 30%;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+.become-member {
+  background-color: #e4003b;
+  position: relative;
+  width: 50%;
+  height: 210px;
+}
+.why-join {
+  background-color: #11ad8e;
+  position: relative;
+  width: 50%;
+  height: 210px;
+}
+.renew {
+  background-color: #33bfd4;
+  position: relative;
+  width: 50%;
+  height: 210px;
+}
+.access {
+  background-color: #12516f;
+  position: relative;
+  width: 50%;
+  height: 210px;
+}
+.become-child {
+  position: absolute;
+  top: 50px;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.why-join-child {
+  position: absolute;
+  top: 50px;
+  align-items: center;
+  /* color: white; */
+  font-size: 20px;
+}
+
+.renew-child {
+  position: absolute;
+  top: 10px;
+  /* color: white; */
+  font-size: 20px;
+}
+.access-child {
+  position: absolute;
+  top: 50px;
+
+  /* color: white; */
+  font-size: 20px;
+}
+.become-and-join {
+  display: flex;
+  width: 50%;
+}
+.renew-and-access {
+  display: flex;
+  width: 50%;
+}
+
+/* descktop view  and tablet*/
+@media only screen and (max-width: 1000px) {
+  .questions {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+  }
+  .become-member {
+    background-color: #e4003b;
+    position: relative;
+    width: 25%;
+    height: 210px;
+  }
+  .why-join {
+    background-color: #11ad8e;
+    position: relative;
+    width: 25%;
+    height: 210px;
+  }
+  .renew {
+    background-color: #33bfd4;
+    position: relative;
+    width: 25%;
+    height: 210px;
+  }
+  .access {
+    background-color: #12516f;
+    position: relative;
+    width: 25%;
+    height: 210px;
+  }
+}
+/* mobile view */
+@media only screen and (max-width: 500px) {
+  .questions {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+
+  }
+
+  .become-member {
+    background-color: #e4003b;
+    position: relative;
+    width: 100%;
+    height: 210px;
+  }
+  .why-join {
+    background-color: #11ad8e;
+    position: relative;
+    width: 100%;
+    height: 210px;
+  }
+  .renew {
+    background-color: #33bfd4;
+    position: relative;
+    width: 100%;
+    height: 210px;
+  }
+  .access {
+    background-color: #12516f;
+    position: relative;
+    width: 100%;
+    height: 210px;
+  }
 }

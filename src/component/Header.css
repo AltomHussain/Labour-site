@@ -1,22 +1,33 @@
 .jumbotron {
-  /* background-image: url("https://foreignpolicy.com/wp-content/uploads/2019/09/GettyImages-1170765134.jpg?w=1536"); */
-  max-width: 80rem;
+  background-image: url("https://foreignpolicy.com/wp-content/uploads/2019/09/GettyImages-1170765134.jpg?w=1536");
+  background-size: contain;
+  max-width: 400vw;
   height: 40rem;
   border: 20px solid #e4003b;
+
 }
-.jumbotron img {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
+.features-btn{
+float: right;
+ position:sticky;
+
+top: 0;
+margin-right: 20em;
+
+
+
+
+
+
 }
 .title-container {
   position: absolute;
   left: 200px;
   top: 300px;
   max-width: 300px;
-  background-color: blue;
+  color: white;
+}
+.title-container h1 {
+  font-weight: 600;
 }
 .form-container {
   background-color: blue;
@@ -26,14 +37,19 @@
   top: 250px;
 }
 /* Buttons styling */
-.btn-join-labour{
-background-color: #e4003b;
-color: white;
-
+.btn-join-labour {
+  background-color: #e4003b;
+  color: white;
+  padding: 17px;
+  border-radius: 0px;
 }
-.btn-take-action{
-background-color: #33bfd4;
+.btn-take-action {
+  background-color: #33bfd4;
+    padding: 17px;
+  border-radius: 0px;
 }
-.btn-donate-now{
-background-color: #11ad8e;    
+.btn-donate-now {
+  background-color: #11ad8e;
+    padding: 17px;
+  border-radius: 0px;
 }
