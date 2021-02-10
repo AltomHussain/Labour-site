@@ -15,9 +15,9 @@ export default function Home() {
         <button type="button" class="btn  btn-take-action">
           <Link to="take-action">TAKE ACTION</Link>
         </button>
-        <button type="button" class="btn  btn-take-action">
+        {/* <button type="button" class="btn  btn-take-action">
           <Link to="/volunteers"> Volunteers</Link>
-        </button>
+        </button> */}
         <button type="button" class="btn btn-donate-now">
           DONATE NOW
         </button>
