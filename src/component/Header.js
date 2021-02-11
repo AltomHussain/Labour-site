@@ -6,13 +6,14 @@ export default function Header() {
   return (
     <header>
       {/* Here */}
-     
+
       <div className="jumbotron">
         <div className="title-container">
           <h1>A New Leadership</h1>
         </div>
-        <div>
-          <i class="fas fa-chevron-down"></i>
+        <div className="dow-arrow">
+          <i class="fas fa-angle-double-down"></i>
+          <i class="fas fa-angle-double-down"></i>
         </div>
         <div className="form-container">
           <form>

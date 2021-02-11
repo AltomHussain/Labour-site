@@ -18,6 +18,16 @@
   max-width: 300px;
   color: white;
 }
+.dow-arrow {
+  position: absolute;
+  top: 43vw;
+ padding: 10px;
+margin-left: 50vw;
+  font-weight: 800;
+  size: 9x;
+  color: white;
+}
+
 .title-container h1 {
   font-weight: 600;
 }
@@ -70,40 +80,44 @@
     color: white;
   }
 
-/* Header buttons */
-.features-btn {
-
-  display: flex;
-  position: sticky;
-  top: 0px;
- margin-right: 4em;
-  margin-left: 50px;
-  
-}
+  /* Header buttons */
+  .features-btn {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    margin-right: 4em;
+    margin-left: 50px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .form-container {
     background-color: blue;
     max-width: 300px;
-
     right: 0vw;
-    top: 90vw;
+    top: 80vw;
     left: 5vw;
   }
-   .title-container {
+  .title-container {
     position: absolute;
     left: 30vw;
-    top: 60vw;
+    top: 55vw;
     max-width: 300px;
     color: white;
   }
   .features-btn {
-
-  display: flex;
-  position: sticky;
-  top: 0px;
- margin-right: 4em;
-  margin-left: 50px;
- flex-wrap: wrap;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    margin-right: 4em;
+    margin-left: 50px;
+    flex-wrap: wrap;
+  }
+  .dow-arrow {
+  position: absolute;
+  top: 211vw;
+ padding: 10px;
+margin-left: 50vw;
+  font-weight: 800;
+  size: 9x;
 }
 }
