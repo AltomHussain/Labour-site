@@ -7,20 +7,26 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="home-container">
-      <NavBar />
-      <div className="features-btn">
-        <button type="button" class="btn  btn-join-labour">
-          <Link to="/join-labour">JOIN LABOUR</Link>
-        </button>
-        <button type="button" class="btn  btn-take-action">
-          <Link to="take-action">TAKE ACTION</Link>
-        </button>
-        {/* <button type="button" class="btn  btn-take-action">
+      <div className="phone-view-nav">
+       
+          <div className="phone-nav">
+            <NavBar />
+          </div>
+          <div className="features-btn">
+            <button type="button" class="btn  btn-join-labour">
+              <Link to="/join-labour">JOIN LABOUR</Link>
+            </button>
+            <button type="button" class="btn  btn-take-action">
+              <Link to="take-action">TAKE ACTION</Link>
+            </button>
+            {/* <button type="button" class="btn  btn-take-action">
           <Link to="/volunteers"> Volunteers</Link>
         </button> */}
-        <button type="button" class="btn btn-donate-now">
-          DONATE NOW
-        </button>
+            <button type="button" class="btn btn-donate-now">
+              DONATE NOW
+            </button>
+          </div>
+      
       </div>
       <Header />
 
@@ -46,7 +52,7 @@ export default function Home() {
         </div>
       </div>
       {/* Second container */}
-      <div className="container-1">
+      <div className="image-and-meet-sir">
         <div className="first-child">
           <img
             className="sir-image"
@@ -54,7 +60,7 @@ export default function Home() {
             alt="Keir Starmer"
           />
         </div>
-        <div className="second-child">
+        <div className="meet-sir-container">
           <h1 className="text-danger mb-3">Meet Keir Starmer</h1>
           <p className="my-3">
             Keir Starmer is the Leader of the Labour Party. Find out more about

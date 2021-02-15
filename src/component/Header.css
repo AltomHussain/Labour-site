@@ -5,24 +5,25 @@
   height: 40rem;
   border: 20px solid #e4003b;
 }
+
+/* take it to the home.css */
 .features-btn {
   float: right;
   position: sticky;
   top: 0;
   margin-right: 20em;
 }
+.header-view {
+  display: flex;
+  justify-content: space-around;
+}
 .title-container {
-  position: absolute;
-  left: 200px;
-  top: 15vw;
-  max-width: 300px;
   color: white;
 }
 .dow-arrow {
-  position: absolute;
-  top: 43vw;
- padding: 10px;
-margin-left: 50vw;
+  margin-top: 10vw;
+  padding: 10px;
+  margin-left: 50vw;
   font-weight: 800;
   size: 9x;
   color: white;
@@ -32,11 +33,16 @@ margin-left: 50vw;
   font-weight: 600;
 }
 .form-container {
-  background-color: blue;
-  max-width: 300px;
-  position: absolute;
-  right: 32vw;
-  top: 15vw;
+  padding: 0;
+  width: 25%;
+}
+.form-text {
+  font-size: 12px;
+  color: white;
+}
+.form-email:hover {
+  font-size: large;
+  color: white;
 }
 /* Buttons styling */
 .btn-join-labour {
@@ -56,28 +62,10 @@ margin-left: 50vw;
   border-radius: 0px;
 }
 @media only screen and (max-width: 1000px) {
-  .form-container {
-    background-color: blue;
-    max-width: 300px;
-    position: absolute;
-    right: 22vw;
-    top: 20vw;
-  }
 }
 @media only screen and (max-width: 800px) {
   .form-container {
-    background-color: blue;
-    max-width: 300px;
-    right: 0vw;
-    top: 50vw;
-    left: 30vw;
-  }
-  .title-container {
-    position: absolute;
-    left: 40vw;
-    top: 30vw;
-    max-width: 300px;
-    color: white;
+    width: 100%;
   }
 
   /* Header buttons */
@@ -85,39 +73,30 @@ margin-left: 50vw;
     display: flex;
     position: sticky;
     top: 0px;
-    margin-right: 4em;
-    margin-left: 50px;
   }
 }
 @media only screen and (max-width: 500px) {
   .form-container {
-    background-color: blue;
-    max-width: 300px;
-    right: 0vw;
-    top: 80vw;
-    left: 5vw;
+    width: 100%;
   }
-  .title-container {
-    position: absolute;
-    left: 30vw;
-    top: 55vw;
-    max-width: 300px;
-    color: white;
+  .header-view {
+    flex-direction: column;
+    width: 100%;
   }
+
   .features-btn {
     display: flex;
     position: sticky;
     top: 0px;
-    margin-right: 4em;
-    margin-left: 50px;
-    flex-wrap: wrap;
+  }
+  .fa-angle-double-down {
+    display: none;
   }
   .dow-arrow {
-  position: absolute;
-  top: 211vw;
- padding: 10px;
-margin-left: 50vw;
-  font-weight: 800;
-  size: 9x;
-}
+    top: 500vw;
+    padding: 10px;
+    margin-left: 50vw;
+    font-weight: 800;
+    background-color: red;
+  }
 }
