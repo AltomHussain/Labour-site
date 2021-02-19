@@ -8,29 +8,27 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="phone-view-nav">
-       
-          <div className="phone-nav">
-            <NavBar />
-          </div>
-          <div className="features-btn">
-            <button type="button" class="btn  btn-join-labour">
-              <Link to="/join-labour">JOIN LABOUR</Link>
-            </button>
-            <button type="button" class="btn  btn-take-action">
-              <Link to="take-action">TAKE ACTION</Link>
-            </button>
-            {/* <button type="button" class="btn  btn-take-action">
+        <div className="phone-nav">
+          <NavBar />
+        </div>
+        <div className="features-btn">
+          <button type="button" class="btn  btn-join-labour">
+            <Link to="/join-labour">JOIN LABOUR</Link>
+          </button>
+          <button type="button" class="btn  btn-take-action">
+            <Link to="take-action">TAKE ACTION</Link>
+          </button>
+          {/* <button type="button" class="btn  btn-take-action">
           <Link to="/volunteers"> Volunteers</Link>
         </button> */}
-            <button type="button" class="btn btn-donate-now">
-              DONATE NOW
-            </button>
-          </div>
-      
+          <button type="button" class="btn btn-donate-now">
+            DONATE NOW
+          </button>
+        </div>
       </div>
       <Header />
 
-      <div className="home">
+      <div className="home" id="home">
         <div className="first-container">
           <h2 className="text-center bg-primary">See our latest campaigns</h2>
           <div className="first-child">
@@ -61,35 +59,35 @@ export default function Home() {
           />
         </div>
         <div className="meet-sir-container">
-          <h1 className="text-danger mb-3">Meet Keir Starmer</h1>
+          <div className="d-flex">
+            <span className="hand-made-hyphen">&nbsp;&nbsp;&nbsp;&nbsp;</span>{" "}
+            <h1 className="text-danger mb-3">Meet Keir Starmer</h1>
+          </div>
+
           <p className="my-3">
             Keir Starmer is the Leader of the Labour Party. Find out more about
             Keir now.
           </p>
           <span className="text-danger my-3 font-weight-bold">
-            LEARN ABOUT THE LEADER OF LABOUR arrow here
+            LEARN ABOUT THE LEADER OF LABOUR{" "}
+            <i class="fas fa-long-arrow-alt-right"></i>
           </span>
         </div>
       </div>
 
-      <div className="container-2">
+      <div className="find-local-mp">
         <h3 className="text-danger text-center pt-5">
-          font-awesome here Find your local Labour representative
+          <i class="fas fa-user-check"></i> Find your local Labour
+          representative
         </h3>
         <form className="text-center form text-center pt-3">
-          <div className="span">
-            <button className="btn btn-dark p-2 mb-1">
-              <i className="fas fa-search"></i>
-            </button>
-            <input
-              className="p-2 input-search"
-              type="text"
-              placeholder="Search by postcode"
-            />
-            <button className="btn btn-danger p-2 mb-1 pr-2">
-              <i className="fas fa-long-arrow-alt-right"></i>
-            </button>
-          </div>
+          <i className="fas fa-search"></i>
+          <input
+            className="p-2 input-search"
+            type="text"
+            placeholder="Search by postcode"
+          />
+          <i className="fas text-white seach-arrow fa-long-arrow-alt-right"></i>
         </form>
       </div>
 
@@ -140,14 +138,20 @@ export default function Home() {
         {/* </div> */}
 
         <div className="people-powered">
-          <h2 className="text-danger mt-4">Join our people-powered movement</h2>
+          <div className="d-flex">
+            <span className="hand-made-hyphen">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <h2 className="text-danger mt-4">
+              Join our people-powered movement
+            </h2>
+          </div>
           <p className="my-2">
             Labour is made up of over half a million members, determined to
             transform Britain. It's simple and affordable to become a member,
             and it unlocks a ton of opportunities.
           </p>
           <span className="text-danger">
-            FIND OUT WHY YOU SHOULD JOIN LABOUR arrow here
+            FIND OUT WHY YOU SHOULD JOIN LABOUR{" "}
+            <i class="fas find-out fa-arrow-right"></i>
           </span>
         </div>
       </div>

@@ -54,10 +54,16 @@ export default function Header() {
           </div>
         </div>
         <div className="dow-arrow">
+          <a href="#home" className="text-white">
+            {" "}
+            <i class="fas fa-angle-double-down"></i>
+          
           <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
+          </a>
         </div>
       </div>
+
+      
     </header>
   );
 }
