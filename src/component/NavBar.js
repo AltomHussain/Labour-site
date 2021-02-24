@@ -43,7 +43,7 @@ export default function NavBar() {
               </div>
             </li>
             <li className="nav-item where-we-stand">
-              <a className="nav-link" href="https://www.google.co.uk/">
+              <a className="nav-link active" href="https://www.google.co.uk/">
                 Where We Stand
               </a>
               <div className="where-we-stand-children children">
@@ -55,7 +55,7 @@ export default function NavBar() {
             </li>
 
             <li className="nav-item members">
-              <a className="nav-link" href="https://www.google.co.uk/">
+              <a className="nav-link active" href="https://www.google.co.uk/">
                 Members
               </a>
               <div className=" children">
@@ -78,7 +78,7 @@ export default function NavBar() {
             </li>
 
             <li className="nav-item latest">
-              <a className="nav-link" href="https://www.google.co.uk/">
+              <a className="nav-link active" href="https://www.google.co.uk/">
                 Latest
               </a>
               <div className="children">

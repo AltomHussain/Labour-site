@@ -1,6 +1,10 @@
 .img-fluid {
   width: 100px;
 }
+
+ .navbar{
+  box-shadow: 5px 5px 5px #888888;
+} 
 .navbar-nav .nav-item ul li {
   list-style-type: none;
   color: white;
@@ -38,4 +42,12 @@
 .others .fa-angle-double-right {
   /* margin-left: 80px; */
   float: right;
+}
+
+@media only screen and (max-width: 800px) {
+.navbar{
+  position: sticky;
+  top: 0;
+  /* margin-top: 10vw; */
+}
 }
