@@ -1,39 +1,102 @@
 .jumbotron {
-  /* background-image: url("https://foreignpolicy.com/wp-content/uploads/2019/09/GettyImages-1170765134.jpg?w=1536"); */
-  max-width: 80rem;
+  background-image: url("https://foreignpolicy.com/wp-content/uploads/2019/09/GettyImages-1170765134.jpg?w=1536");
+  background-size: contain;
+  max-width: 400vw;
   height: 40rem;
   border: 20px solid #e4003b;
 }
-.jumbotron img {
-  position: relative;
+
+/* take it to the home.css */
+.features-btn {
+  float: right;
+  position: sticky;
+  top: 0;
+  margin-right: 20em;
+}
+.header-view {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
+  justify-content: space-around;
 }
 .title-container {
-  position: absolute;
-  left: 200px;
-  top: 300px;
-  max-width: 300px;
-  background-color: blue;
+  color: white;
+}
+.dow-arrow {
+  margin-top: 10vw;
+  padding: 10px;
+  margin-left: 50vw;
+  font-weight: 800;
+  size: 9x;
+  color: white;
+}
+
+.title-container h1 {
+  font-weight: 600;
 }
 .form-container {
-  background-color: blue;
-  max-width: 300px;
-  position: absolute;
-  right: 200px;
-  top: 250px;
+  padding: 0;
+  width: 25%;
+}
+.form-text {
+  font-size: 12px;
+  color: white;
+}
+.form-email:hover {
+  font-size: large;
+  color: white;
 }
 /* Buttons styling */
-.btn-join-labour{
-background-color: #e4003b;
-color: white;
+.btn-join-labour {
+  background-color: #e4003b;
+  color: white;
+  padding: 13px;
+  border-radius: 0px;
+}
+.btn-take-action {
+  background-color: #33bfd4;
+  padding: 13px;
+  border-radius: 0px;
+}
+.btn-donate-now {
+  background-color: #11ad8e;
+  padding: 13px;
+  border-radius: 0px;
+}
+@media only screen and (max-width: 1000px) {
+}
+@media only screen and (max-width: 800px) {
+  .form-container {
+    width: 100%;
+  }
 
+  /* Header buttons */
+  .features-btn {
+    display: flex;
+    position: sticky;
+    top: 0px;
+  }
 }
-.btn-take-action{
-background-color: #33bfd4;
-}
-.btn-donate-now{
-background-color: #11ad8e;    
+@media only screen and (max-width: 500px) {
+  .form-container {
+    width: 100%;
+  }
+  .header-view {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .features-btn {
+    display: flex;
+    position: sticky;
+    top: 0px;
+  }
+  .fa-angle-double-down {
+    display: none;
+  }
+  .dow-arrow {
+    top: 500vw;
+    padding: 10px;
+    margin-left: 50vw;
+    font-weight: 800;
+    background-color: red;
+  }
 }

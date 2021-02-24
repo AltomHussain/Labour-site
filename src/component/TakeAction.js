@@ -1,6 +1,7 @@
 import React from "react";
 import "./TakeAction.css";
 export default function TakeAction() {
+ 
   return (
     <div>
       <header>
@@ -60,6 +61,7 @@ export default function TakeAction() {
           </div>
         </div>
       </div>
+
       <footer>
         <div className="first-container">
           <img src="logo here" alt="labout logo" />
