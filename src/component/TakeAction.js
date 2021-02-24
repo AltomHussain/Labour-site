@@ -1,7 +1,14 @@
 import React from "react";
 import "./TakeAction.css";
 export default function TakeAction() {
- 
+  const navItems = [
+    { item: " Donate", icon: `<i class="fas fa-gift"></i>` },
+    { item: "Join", icon: `   <i class="fas fa-plus-square"></i>` },
+    {
+      item: "Volunteer",
+      icon: ` <i class="fas fa-users"></i>`,
+    },
+  ];
   return (
     <div>
       <header>
@@ -25,17 +32,18 @@ export default function TakeAction() {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                <i class="fas fa-gift"></i> Donate <span className="sr-only">(current)</span>
+                  <i class="fas fa-gift"></i> Donate{" "}
+                  <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                <i class="fas fa-plus-square"></i> Join
+                  <i class="fas fa-plus-square"></i> Join
                 </a>
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                <i class="fas fa-users"></i>Volunteer
+                  <i class="fas fa-users"></i>Volunteer
                 </a>
               </li>
             </ul>
