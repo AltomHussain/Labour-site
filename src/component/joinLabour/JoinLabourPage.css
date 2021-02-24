@@ -1,39 +1,87 @@
-.join-header{
-    background-image: url("https://labour-renaissance.org.uk/wp-content/uploads/2020/06/header-1.png");
-    max-width: 100%;
-    height: 45%;
-
+.join-header {
+  background-image: url("https://labour-renaissance.org.uk/wp-content/uploads/2020/06/header-1.png");
+  max-width: 100%;
+  height: 45%;
 }
-.header{
-    height: 180px;
+.header {
+  height: 180px;
 }
-.join-logo{
-    height: 4vw;
-    width: 10vw;
-    margin: 10px 0px 0px 15px;
-    background: transparent;
+.join-logo {
+  height: 4vw;
+  width: 10vw;
+  margin: 10px 0px 0px 15px;
+  background: transparent;
 }
-.join-container{
-   
-    display: flex;
-    flex-direction: column;
-    margin:0 auto;
-
+.join-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
-.accordion-item{
-    width: 50vw;
+.accordion-item {
+  width: 50vw;
+  margin-bottom: 15px;
+  border: solid#51b8a0 2.5px;
 }
-.small-cont{
-    display: flex;
-    justify-content: space-between;
+.small-cont {
+  display: flex;
+  justify-content: space-between;
 }
-.join-h2{
-    margin: 0px 0px 55px 0px;
-    background-color: red;
+.join-h2 {
+  margin: 0px 0px 55px 0px;
 }
-.standard{
-    background-color: #51b8a0;
-    margin-bottom: 22px;
-    color: white;
-    border-radius: 4px;
+.standard {
+  background-color: #51b8a0;
+  margin-bottom: 22px;
+  color: white;
+  border-radius: 4px;
+}
+.available-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.price {
+}
+/* Accordian style */
+.acordian-items {
+  background-color: #51b8a0;
+  margin: 10px;
+  height: auto;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.heading-sub {
+}
+a:link {
+  text-decoration: none;
+}
+.heading-sub:hover {
+  text-decoration: none;
+}
+/* after accordians */
+.already-member {
+  border: solid 2px #51b8a0;
+  border-radius: 3px;
+  margin: 25px;
+  height: auto;
+  font-weight: 600;
+  text-align: center;
+  padding: 7px 3px;
+}
+.already-member:hover {
+  background-color: rgb(235, 202, 202);
+}
+/* First break point */
+@media only screen and (max-width: 800px) {
+  .join-container {
+    width: 97%;
+    margin: 0px 8px;
+  }
+  .accordion-item {
+    width: 100%;
+  }
+  .acordian-items {
+    padding: 0;
+  }
 }

@@ -44,7 +44,6 @@ export default function JoinLabourPage() {
   return (
     <div className="join-container">
       <div className="header">
-        {" "}
         <div className="join-header">
           <img
             className="join-logo"
@@ -55,9 +54,9 @@ export default function JoinLabourPage() {
       </div>
 
       <div className="join-container">
-        <h2 className="join-h2">
-          <Link to="take-action">helo</Link> Join the Labour Party
-        </h2>
+        <h1 className="join-h2">
+        Join the Labour Party
+        </h1>
         <p className="mb-5">Help us campaign for a fairer Britain</p>
         <h4 className="mb-4">Choose your membership rate</h4>
 
@@ -74,12 +73,12 @@ export default function JoinLabourPage() {
 
         {/* new accordion */}
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div className="accordion accordion-flush" id="accordionFlushExample">
           {/* Item 1*/}
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingOne">
               <button
-                class="accordion-button  bg-warning text-white collapsed"
+                className="accordion-button  bg-warning text-white collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
@@ -92,25 +91,28 @@ export default function JoinLabourPage() {
 
             <div
               id="flush-collapseOne"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
+                <div className="available-price">
                 <p>
-                  {" "}
                   Available for those aged 20 to 26, retired, unwaged, part-time
                   workers or affiliated trade union members
                 </p>
-                <div className="col-sm-5 offset-sm-6  offset-md-0">
+                <div className="price">
                   £2.<small> 21</small> per month
+                </div>
                 </div>
                 {recudeItems.map((item, index) => {
                   return (
-                    <div key="index">
+                    <div key={index} className="acordian-items">
                       <Link to="/join-detail">
-                        <h3>{item.heading}</h3>
-                        <p>{item.subheading} </p>
+                        <h4 className="text-white pt-2 pb-2 pl-3 heading-sub">
+                          {item.heading}
+                        </h4>
+                        <p className="text-white pl-3">{item.subheading} </p>
                       </Link>
                     </div>
                   );
@@ -120,10 +122,10 @@ export default function JoinLabourPage() {
           </div>
 
           {/* item 2 */}
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingTwo">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed bg-warning text-white"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo"
@@ -131,29 +133,32 @@ export default function JoinLabourPage() {
                 aria-controls="flush-collapseTwo"
               >
                 Other
+                use react toastify in everypage
               </button>
             </h2>
             <div
               id="flush-collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                <div>
+              <div className="accordion-body">
+                <div className="available-price" >
                   Available for those aged 14-19, students and current or former
                   members of the British Armed Forces
-                  <p>
+                  <p className="ml-3">
                     £3.<small>00</small> per year
                   </p>
                 </div>
 
                 {othersItems.map((item, index) => {
                   return (
-                    <div key="index">
+                    <div key={index} className="acordian-items">
                       <Link to="/join-detail">
-                        <h3>{item.heading}</h3>
-                        <p>{item.subheading} </p>
+                        <h4 className="text-white pt-2 pb-2 pl-3 heading-sub">
+                          {item.heading}
+                        </h4>
+                        <p className="text-white pl-3">{item.subheading} </p>
                       </Link>
                     </div>
                   );
