@@ -3,11 +3,17 @@ import "./TakeAction.css";
 export default function TakeAction() {
   const navItems = [
     { item: " Donate", icon: `<i class="fas fa-gift"></i>` },
-    { item: "Join", icon: `   <i class="fas fa-plus-square"></i>` },
+    { item: "Join", icon: `<i class="fas fa-plus-square"></i>` },
     {
       item: "Volunteer",
       icon: ` <i class="fas fa-users"></i>`,
     },
+  ];
+  const footerItems = [
+    { item: "Join", link: "" },
+    { item: "Donate", link: "" },
+    { item: "Volunteer", link: "" },
+    { item: "Privacy Policy", link: "" },
   ];
   return (
     <div>
