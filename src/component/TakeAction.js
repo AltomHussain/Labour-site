@@ -2,11 +2,12 @@ import React from "react";
 import "./TakeAction.css";
 export default function TakeAction() {
   const navItems = [
-    { item: " Donate", icon: `<i class="fas fa-gift"></i>` },
-    { item: "Join", icon: `<i class="fas fa-plus-square"></i>` },
+    { id: 1, item: " Donate", icon: "fas fa-gift" },
+    { id: 2, item: "Join", icon: "fas fa-plus-square" },
     {
+      id: 3,
       item: "Volunteer",
-      icon: ` <i class="fas fa-users"></i>`,
+      icon: "fas fa-users",
     },
   ];
   const footerItems = [
@@ -36,22 +37,14 @@ export default function TakeAction() {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <i class="fas fa-gift"></i> Donate{" "}
-                  <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <i class="fas fa-plus-square"></i> Join
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <i class="fas fa-users"></i>Volunteer
-                </a>
-              </li>
+              {navItems.map((item) => {
+                return (
+                  <li key={item.id} className="nav-item active">
+                    <i className={item.icon}></i>
+                    {item.item}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </nav>
@@ -71,6 +64,7 @@ export default function TakeAction() {
             <img
               className="my-3"
               src="https://labour-events-production.s3.eu-west-1.amazonaws.com/static-map.png?time=2021-01-27-22-00"
+              alt="map-of-labour-cities"
             />
           </div>
         </div>
@@ -87,6 +81,7 @@ export default function TakeAction() {
         </div>
         <div className="second-container">
           <ul>
+          
             <li>
               {" "}
               <a href="link">Join</a>
