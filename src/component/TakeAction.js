@@ -18,35 +18,28 @@ export default function TakeAction() {
   ];
   return (
     <div>
-      <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-danger">
-          <a className="navbar-brand" href="#">
-            Logo
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              {navItems.map((item) => {
-                return (
-                  <li key={item.id} className="nav-item active">
-                    <i className={item.icon}></i>
-                    {item.item}
-                  </li>
-                );
-              })}
-            </ul>
+      <header className="take-action-header">
+        <nav className=" take-action-nav navbar-expand-lg navbar-light ">
+          <img
+            className="navbar-brand"
+            src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
+            alt="labout logo"
+          />
+          <div>
+            <div>
+              <ul className="navbar-nav mt-3 mr-auto">
+                {navItems.map((item) => {
+                  return (
+                    <li key={item.id} className=" text-white ml-4 active">
+                      <i className={item.icon}></i>
+                      {item.item}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
+              <a className="mt-3 text-dark bg-white create-event" href="#">Create event</a>{" "}
         </nav>
       </header>
       <div className="take-action-container">
