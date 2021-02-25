@@ -3,10 +3,12 @@
 }
 .search-container {
   background-color: white;
-  max-width: 310px;
-  height: 200px;
+  width: 39vw;
   padding: 5px;
+  display: block;
+  margin: 10px auto;
 }
+
 .take-action-container {
   background-color: #75cff0;
 }
@@ -38,4 +40,23 @@
   margin-bottom: 15px;
   font-size: 14px;
   border-radius: 5px;
+}
+/* End of header */
+.image-container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 800px) {
+  .search-container {
+    background-color: white;
+    width: 95%;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+  }
 }
