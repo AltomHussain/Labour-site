@@ -1,32 +1,27 @@
-.btn-sign-up{
-    background-color: #00AA91;
+.btn-sign-up {
+  background-color: #00aa91;
 }
-.volunteers-container{
-    background-color:  #97cadd;;
+.volunteers-container {
+  background-color: #97cadd;
 }
-.sign-up-container{
-    width:  50%;
-    height: auto;
-    display: flex;
-    margin: 40px auto;
-    flex-flow: column;
+.sign-up-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  flex-flow: column;
+  background-color: white;
+  border-radius: 5px;
+  padding: 50px 20px 120px 20px;
+
+  height: auto;
 }
-.main-form{
-    width: 100%;
+.main-form {
+  width: 100%;
 }
-/* Fist name and last name */
-/* .fist-last-name{
-background-color: red;
-display: flex;
-width: 100%;
-} */
-.first-cont{
-    width: 50%;
+.first-cont {
+  width: 50%;
 }
 .main-form input {
-    width: 100%;
-
+  width: 100%;
 }
-/* .fist-name-input{
-    width: 50%;
-} */
