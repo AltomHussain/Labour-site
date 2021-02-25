@@ -4,3 +4,29 @@
 .volunteers-container{
     background-color:  #97cadd;;
 }
+.sign-up-container{
+    width:  50%;
+    height: auto;
+    display: flex;
+    margin: 40px auto;
+    flex-flow: column;
+}
+.main-form{
+    width: 100%;
+}
+/* Fist name and last name */
+/* .fist-last-name{
+background-color: red;
+display: flex;
+width: 100%;
+} */
+.first-cont{
+    width: 50%;
+}
+.main-form input {
+    width: 100%;
+
+}
+/* .fist-name-input{
+    width: 50%;
+} */
