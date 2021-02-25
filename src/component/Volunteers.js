@@ -21,13 +21,6 @@ export default function Volunteers() {
               />
             </div>
             <div className="form-group col-md-6">
-              <label className="">Phone</label>
-              <input type="text" placeholder="Phone" className="form-control" />
-            </div>
-          </div>
-
-          <div className="form-row ">
-            <div className="form-group col-md-6">
               <label className="">Last Name</label>
               <input
                 type="text"
@@ -35,7 +28,12 @@ export default function Volunteers() {
                 className="form-control"
               />
             </div>
-
+          </div>
+          <div className="form-row ">
+            <div className="form-group col-md-6">
+              <label className="">Phone</label>
+              <input type="text" placeholder="Phone" className="form-control" />
+            </div>
             <div className="form-group col-md-6">
               <label className="">Postcode</label>
               <input
