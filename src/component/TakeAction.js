@@ -14,7 +14,7 @@ export default function TakeAction() {
     { item: "Join", link: "" },
     { item: "Donate", link: "" },
     { item: "Volunteer", link: "" },
-    { item: "Privacy Policy", link: "" },
+    { item: "Privacy Policy", link: "https://labour.org.uk/cookie-policy/" },
   ];
   return (
     <div>
@@ -81,23 +81,11 @@ export default function TakeAction() {
         </div>
         <div className="second-container">
           <ul>
-          
-            <li>
-              {" "}
-              <a href="link">Join</a>
-            </li>
-            <li>
-              {" "}
-              <a href="link">Donate</a>
-            </li>
-            <li>
-              {" "}
-              <a href="link">Volunteer</a>
-            </li>
-            <li>
-              {" "}
-              <a href="link">Privacy Policy</a>
-            </li>
+            {footerItems.map((item) => (
+              <a href={item.link}>
+                <li> {item.item}</li>
+              </a>
+            ))}
           </ul>
         </div>
       </footer>
