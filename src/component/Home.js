@@ -19,10 +19,10 @@ export default function Home() {
             <Link to="take-action">TAKE ACTION</Link>
           </button>
           <button type="button" class="btn  btn-take-action">
-          <Link to="/volunteers"> Volunteers</Link>
-        </button>
+            <Link to="/volunteers"> Volunteers</Link>
+          </button>
           <button type="button" class="btn btn-donate-now">
-            DONATE NOW
+            <Link to="/donate-party">DONATE NOW</Link>
           </button>
         </div>
       </div>
