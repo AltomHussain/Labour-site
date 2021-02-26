@@ -41,11 +41,7 @@ const handleClick = (id) => {
                       <button value={index}
                       
                       onClick={()=>handleClick(index)}
-                      style={isSelected.includes(index)?
-                        {backgroundColor: "cyan"}
-                      :{backgroundColor: "white"}
-                      
-                      }
+                     className={isSelected.includes(index)? "btn btn-success": "btn btn-white"}
                       >£{amount}</button>
                     </td>
                   );
