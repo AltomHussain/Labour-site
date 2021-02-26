@@ -1,12 +1,8 @@
 import "./App.css";
 import Home from "./component/Home";
 import TakeAction from "./component/TakeAction";
-
-
-
-
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import DonateParty from "./component/donate/DonateParty"
 import HomeJoin from "./component/joinLabour/HomeJoin";
 import Volunteers from "./component/Volunteers";
 
