@@ -25,7 +25,7 @@ export default function NavBar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            <li className="nav-item about">
               <a
                 className="nav-link active"
                 aria-current="page"
@@ -33,30 +33,60 @@ export default function NavBar() {
               >
                 About
               </a>
+              <div className="about-children children">
+                <ul>
+                  <li>People</li>
+                  <li>Labour’s Legacy</li>
+                  <li>Work With Us</li>
+                  <li> Contact</li>
+                </ul>
+              </div>
             </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="https://www.google.co.uk/">
-                People
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="https://www.google.co.uk/">
+            <li className="nav-item where-we-stand">
+              <a className="nav-link active" href="https://www.google.co.uk/">
                 Where We Stand
               </a>
+              <div className="where-we-stand-children children">
+                <ul>
+                  <li>Campaigns</li>
+                  <li>Policy Development</li>
+                </ul>
+              </div>
             </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="https://www.google.co.uk/">
+            <li className="nav-item members">
+              <a className="nav-link active" href="https://www.google.co.uk/">
                 Members
               </a>
+              <div className=" children">
+                <ul>
+                  <li> My Labour Account</li>
+                  <li> Why Join Labour?</li>
+                  <li className="others">
+                    Others <i class="fas fa-angle-double-right"></i>
+                    <div className="others-children">
+                      <ul>
+                        <li> New Members</li>
+                        <li> Member Resources</li>
+                        <li> Member Welfare</li>
+                        <li>Campaign Hub</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="https://www.google.co.uk/">
+            <li className="nav-item latest">
+              <a className="nav-link active" href="https://www.google.co.uk/">
                 Latest
               </a>
+              <div className="children">
+                <ul>
+                  <li>Press Releases</li>
+                  <li>Stories</li>
+                </ul>
+              </div>
             </li>
           </ul>
           <form className="d-flex">

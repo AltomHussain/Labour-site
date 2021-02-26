@@ -1,3 +1,53 @@
-.img-fluid{
-    width: 100px;
+.img-fluid {
+  width: 100px;
+}
+
+ .navbar{
+  box-shadow: 5px 5px 5px #888888;
+} 
+.navbar-nav .nav-item ul li {
+  list-style-type: none;
+  color: white;
+  margin: 5px;
+  text-align: left;
+}
+.children {
+  display: none;
+}
+
+.navbar-nav .nav-item:hover .children {
+  display: block;
+  position: absolute;
+  width: 200px;
+  background-color: #e4003b;
+  text-align: left;
+  border-radius: 5px;
+  margin-left: -10px;
+}
+.others-children {
+  display: none;
+  margin-left: 20px;
+}
+.others:hover .others-children {
+  display: block;
+  position: absolute;
+  width: 200px;
+
+  background-color: #e4003b;
+  margin-left: 155px;
+  margin-top: -10px;
+  border-radius: 5px;
+}
+
+.others .fa-angle-double-right {
+  /* margin-left: 80px; */
+  float: right;
+}
+
+@media only screen and (max-width: 800px) {
+.navbar{
+  position: sticky;
+  top: 0;
+  /* margin-top: 10vw; */
+}
 }

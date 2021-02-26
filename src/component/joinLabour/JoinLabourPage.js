@@ -5,149 +5,181 @@ import JoinFooter from "./JoinFooter";
 
 import "./JoinLabourPage.css";
 export default function JoinLabourPage() {
+  const recudeItems = [
+    {
+      heading: "Age 20 to 26",
+      subheading: "",
+    },
+    {
+      heading: "Required",
+      subheading: "",
+    },
+    {
+      heading: "Unwaged",
+      subheading: null,
+    },
+    {
+      heading: "Part-time Worker",
+      subheading: "Fewer than 16 hours per week",
+    },
+    {
+      heading: "Trade union member",
+      subheading: "Current member of affiliated trade unions",
+    },
+  ];
+  const othersItems = [
+    {
+      heading: "Aged 14 to 19",
+      subheading: null,
+    },
+    {
+      heading: "Students",
+      subheading: "For the duration of yours studies",
+    },
+    {
+      heading: "Member of British Armed forces",
+      subheading: "An introductory rate for the first year of membership",
+    },
+  ];
   return (
     <div className="join-container">
       <div className="header">
-        {" "}
         <div className="join-header">
           <img
+            className="join-logo"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf21Pw1evcj1yLKcyc1HcCpElERJIoZ5dhOA&usqp=CAU"
             alt="labour-logo"
           />
         </div>
       </div>
 
-      <div className="container">
-        <h2>Join the Labour Party</h2>
-        <p>Help us campaign for a fairer Britain</p>
-        <h3>Choose your membership rate</h3>
+      <div className="join-container">
+        <h1 className="join-h2">
+        Join the Labour Party
+        </h1>
+        <p className="mb-5">Help us campaign for a fairer Britain</p>
+        <h4 className="mb-4">Choose your membership rate</h4>
 
         <div className="standard">
-          <div className="row">
-            <h4 className="col-5">Standard</h4>
-            <h4 className="col-5">
+          <div className="d-flex justify-content-between m-3">
+            <h4 className="">Standard</h4>
+            <h4 className="">
               £4.<small>42 per month</small>
             </h4>
           </div>
-          <p>Available to anyone over 14 years old</p>
+          <p className="m-3">Available to anyone over 14 years old</p>
         </div>
         {/* accordion containter */}
 
         {/* new accordion */}
-        <div id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <div className="row">
-                <h5 class="mb-0" className="col ">
-                  <button
-                    class="btn btn-link"
-                    data-toggle="collapse"
-                    data-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    Reduced
-                  </button>
-                </h5>
-                <h4 className="col ml-5">£2.21 per month</h4>
-              </div>
-            </div>
+
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+          {/* Item 1*/}
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingOne">
+              <button
+                className="accordion-button  bg-warning text-white collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Reduced
+              </button>
+            </h2>
 
             <div
-              id="collapseOne"
-              class="collapse show"
-              aria-labelledby="headingOne"
-              data-parent="#accordion"
+              id="flush-collapseOne"
+              className="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
             >
-              <div class="card-body">
-                Available for those aged 20 to 26, retired, unwaged, part-time
-                workers or affiliated trade union members
-                <div>
-                  <div>
-                    {" "}
-                    <Link to="/join-detail">
-                      <h3>Age 20 to 26</h3>
-                    </Link>
-                  </div>
-                  <div>
-                    <h3>Required</h3>
-                  </div>
-
-                  <div>
-                    <h3>Unwaged</h3>
-                  </div>
-
-                  <div>
-                    <h3>Trade union member</h3>
-                    <p>Current member of affiliated trade unions</p>
-                  </div>
-                  <div>
-                    <h3>Part-time Worker</h3>
-                    <p>Fewer than 16 hours per week</p>
-                  </div>
+              <div className="accordion-body">
+                <div className="available-price">
+                <p>
+                  Available for those aged 20 to 26, retired, unwaged, part-time
+                  workers or affiliated trade union members
+                </p>
+                <div className="price">
+                  £2.<small> 21</small> per month
                 </div>
+                </div>
+                {recudeItems.map((item, index) => {
+                  return (
+                    <div key={index} className="acordian-items">
+                      <Link to="/join-detail">
+                        <h4 className="text-white pt-2 pb-2 pl-3 heading-sub">
+                          {item.heading}
+                        </h4>
+                        <p className="text-white pl-3">{item.subheading} </p>
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
-          {/* Second Card */}
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <div className="row">
-                <h5 class="mb-0" className="col">
-                  <button
-                    class="btn btn-link collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Other
-                  </button>
-                </h5>
-                <h5 className="col ml-5">
-                  £3.<small>00</small>per year
-                </h5>
-              </div>
-            </div>
 
+          {/* item 2 */}
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="flush-headingTwo">
+              <button
+                className="accordion-button collapsed bg-warning text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Other
+                use react toastify in everypage
+              </button>
+            </h2>
             <div
-              id="collapseThree"
-              class="collapse"
-              aria-labelledby="headingThree"
-              data-parent="#accordion"
+              id="flush-collapseTwo"
+              className="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
             >
-              <div class="card-body">
-                Available for those aged 14-19, students and current or former
-                members of the British Armed Forces
-                <div>
-                  <div>
-                    <h3>Aged 14 to 19</h3>
-                  </div>
-                  <div>
-                    <h3>Student</h3>
-                    <p>For the duration of yours studies</p>
-                  </div>
-                  <div>
-                    <h3>Member of British Armed forces</h3>
-                    <p>An introductory rate for the first year of membership</p>
-                  </div>
+              <div className="accordion-body">
+                <div className="available-price" >
+                  Available for those aged 14-19, students and current or former
+                  members of the British Armed Forces
+                  <p className="ml-3">
+                    £3.<small>00</small> per year
+                  </p>
                 </div>
+
+                {othersItems.map((item, index) => {
+                  return (
+                    <div key={index} className="acordian-items">
+                      <Link to="/join-detail">
+                        <h4 className="text-white pt-2 pb-2 pl-3 heading-sub">
+                          {item.heading}
+                        </h4>
+                        <p className="text-white pl-3">{item.subheading} </p>
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
-          {/* end accordion */}
-          <div className="d-flex">
-            <hr className="col my-5" /> <p className="mt-4">Or</p>
-            <hr className="col my-5" />
-          </div>
-          <div className="already-member">
-            <Link to="/already-member">
-              I am already a member. Renew membership{" "}
-            </Link>
-          </div>
-          <JoinFooter />
+        </div>
+
+        <div className="d-flex">
+          <hr className="col my-5" /> <p className="mt-4">Or</p>
+          <hr className="col my-5" />
+        </div>
+        <div className="already-member">
+          <Link to="/already-member">
+            I am already a member. Renew membership{" "}
+          </Link>
         </div>
       </div>
+
+      <JoinFooter />
     </div>
   );
 }
