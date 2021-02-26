@@ -9,6 +9,7 @@ export default function DonateParty() {
         <img
           src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg"
           className="donate-logo"
+          alt="labout-image"
         />
 
         <div className="amount-to-donate">
