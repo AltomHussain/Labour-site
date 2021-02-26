@@ -6,6 +6,7 @@ export default function Header() {
     <header>
       {/* Here */}
 
+
       <div className="jumbotron">
         <div className="header-view">
           <div className="title-container">
@@ -33,6 +34,7 @@ export default function Header() {
               type="submit"
               className="btn btn-danger form-control mt-2 text-white"
             >
+
               KEEP ME UPDATED
             </button>
             <p className="form-text">
