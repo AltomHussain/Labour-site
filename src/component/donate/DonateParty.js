@@ -1,6 +1,8 @@
 import React from "react";
 import "./Donate.css";
 export default function DonateParty() {
+  const amounts = [10, 20, 50];
+  const amounts2 = [50, 250, 100];
   return (
     <div className="home-container">
       <div className="donate-container">
@@ -15,44 +17,41 @@ export default function DonateParty() {
           <table className="table">
             <tbody>
               <tr>
-                <td>
-                  <button className="btn btn-success">£10</button>
-                </td>
-                <td>
-                  <button className="btn btn-success">£20</button>
-                </td>
-                <td>
-                  <button className="btn btn-success">£50</button>
-                </td>
+                {amounts.map((amount, index) => {
+                  return (
+                    <td key={index}>
+                      <button className="btn btn-success">£{amount}</button>{" "}
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr>
+                {amounts2.map((amount, index) => {
+                  return (
+                    <td key={index}>
+                      <button className="btn btn-success">£{amount}</button>
+                    </td>
+                  );
+                })}
               </tr>
 
               <tr>
                 <td>
-                  <button className="btn btn-success">£50</button>
-                </td>
-                <td>
-                  <button className="btn btn-success">£250</button>
-                </td>
-                <td>
-                  <button className="btn btn-success">£100</button>
-                </td>
-              </tr>
-              <tr>
-                <td >
-                  {" "}
                   <button className="btn btn-success">£1000</button>
                 </td>
                 <td colspan="2">
-                  {" "}
-                  <input type="text" placeholder="£ Other amount" className="form-control" />
+                  <input
+                    type="text"
+                    placeholder="£ Other amount"
+                    className="form-control"
+                  />
                 </td>
               </tr>
-             
             </tbody>
           </table>
         </div>
       </div>
-     
+
       <footer>
         <div>
           <a href="#">Terms and Conditions</a>
