@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Donate.css";
 export default function DonateParty() {
   const amounts = [10, 20, 50];
   const amounts2 = [50, 250, 100];
+  const [isSelected, setIsSelected] = useState([]);
+  const [test, setTest] = useState(false)
+// className={isSelected ? "selected" : "btn btn-success"}
+const handleClick = (id) => {
+  // const val = e.target.value
+  //  Number(val)
+  if(!isSelected.includes(id)){
+    console.log(!isSelected.includes(id));
+    setIsSelected([...isSelected, id]);
+    setTest(!test)
+  }else{
+    setIsSelected(isSelected.filter(p => p!==id))
+    console.log(isSelected);
+    }
+  };
   return (
     <div className="home-container">
       <div className="donate-container">
         <img
           src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg"
           className="donate-logo"
-          alt="labout-image"
+          alt="Labour_image"
         />
 
         <div className="amount-to-donate">
@@ -20,8 +35,18 @@ export default function DonateParty() {
               <tr>
                 {amounts.map((amount, index) => {
                   return (
-                    <td key={index}>
-                      <button className="btn btn-success">£{amount}</button>{" "}
+                    <td
+                      key={index}
+                    >
+                      <button value={index}
+                      
+                      onClick={()=>handleClick(index)}
+                      style={isSelected.includes(index)?
+                        {backgroundColor: "cyan"}
+                      :{backgroundColor: "white"}
+                      
+                      }
+                      >£{amount}</button>
                     </td>
                   );
                 })}
@@ -38,7 +63,7 @@ export default function DonateParty() {
 
               <tr>
                 <td>
-                  <button className="btn btn-success">£1000</button>
+                  <button >£1000</button>
                 </td>
                 <td colspan="2">
                   <input
