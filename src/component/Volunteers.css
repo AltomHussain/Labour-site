@@ -1,6 +1,44 @@
-.btn-sign-up{
-    background-color: #00AA91;
+.btn-sign-up {
+  background-color: #00aa91;
 }
-.volunteers-container{
-    background-color:  #97cadd;;
+.volunteers-header{
+    height: 38px;
+}
+.volunteers-header img{
+    height: 38px;
+    margin-left: 40px;
+}
+.volunteers-container {
+  background-color: #97cadd;
+}
+.sign-up-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  flex-flow: column;
+  background-color: white;
+  border-radius: 5px;
+  padding: 50px 20px 120px 20px;
+
+  height: auto;
+}
+.main-form {
+  width: 100%;
+}
+.first-cont {
+  width: 50%;
+}
+.main-form input {
+  width: 100%;
+}
+@media only screen and (max-width: 1000px){
+    .sign-up-container{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .sign-up-container{
+        width: 90%;
+    }
 }

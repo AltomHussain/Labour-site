@@ -1,45 +1,45 @@
 import React from "react";
 import "./TakeAction.css";
 export default function TakeAction() {
- 
+  const navItems = [
+    { id: 1, item: " Donate", icon: "fas fa-gift" },
+    { id: 2, item: "Join", icon: "fas fa-plus-square" },
+    {
+      id: 3,
+      item: "Volunteer",
+      icon: "fas fa-users",
+    },
+  ];
+  const footerItems = [
+    { item: "Join", link: "" },
+    { item: "Donate", link: "" },
+    { item: "Volunteer", link: "" },
+    { item: "Privacy Policy", link: "https://labour.org.uk/cookie-policy/" },
+  ];
   return (
     <div>
-      <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-danger">
-          <a className="navbar-brand" href="#">
-            Logo
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                <i class="fas fa-gift"></i> Donate <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                <i class="fas fa-plus-square"></i> Join
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                <i class="fas fa-users"></i>Volunteer
-                </a>
-              </li>
-            </ul>
+      <header className="take-action-header">
+        <nav className=" take-action-nav navbar-expand-lg navbar-light ">
+          <img
+            className="navbar-brand"
+            src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
+            alt="labout logo"
+          />
+          <div>
+            <div>
+              <ul className="navbar-nav mt-3 mr-auto">
+                {navItems.map((item) => {
+                  return (
+                    <li key={item.id} className=" text-white ml-4 active">
+                      <i className={item.icon}></i>
+                      {item.item}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
+              <a className="mt-3 text-dark bg-white create-event" href="#">Create event</a>{" "}
         </nav>
       </header>
       <div className="take-action-container">
@@ -57,6 +57,7 @@ export default function TakeAction() {
             <img
               className="my-3"
               src="https://labour-events-production.s3.eu-west-1.amazonaws.com/static-map.png?time=2021-01-27-22-00"
+              alt="map-of-labour-cities"
             />
           </div>
         </div>
@@ -73,22 +74,11 @@ export default function TakeAction() {
         </div>
         <div className="second-container">
           <ul>
-            <li>
-              {" "}
-              <a href="link">Join</a>
-            </li>
-            <li>
-              {" "}
-              <a href="link">Donate</a>
-            </li>
-            <li>
-              {" "}
-              <a href="link">Volunteer</a>
-            </li>
-            <li>
-              {" "}
-              <a href="link">Privacy Policy</a>
-            </li>
+            {footerItems.map((item) => (
+              <a href={item.link}>
+                <li> {item.item}</li>
+              </a>
+            ))}
           </ul>
         </div>
       </footer>
