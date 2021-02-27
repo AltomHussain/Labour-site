@@ -3,20 +3,10 @@ import "./Donate.css";
 export default function DonateParty() {
   const amounts = [10, 20, 50];
   const amounts2 = [50, 250, 100];
-  const [isSelected, setIsSelected] = useState([]);
-  const [test, setTest] = useState(false)
+ 
 // className={isSelected ? "selected" : "btn btn-success"}
 const handleClick = (id) => {
-  // const val = e.target.value
-  //  Number(val)
-  if(!isSelected.includes(id)){
-    console.log(!isSelected.includes(id));
-    setIsSelected([...isSelected, id]);
-    setTest(!test)
-  }else{
-    setIsSelected(isSelected.filter(p => p!==id))
-    console.log(isSelected);
-    }
+  
   };
   return (
     <div className="home-container">
@@ -41,7 +31,7 @@ const handleClick = (id) => {
                       <button value={index}
                       
                       onClick={()=>handleClick(index)}
-                     className={isSelected.includes(index)? "btn btn-success": "btn btn-white"}
+                     className="btn btn-success"
                       >£{amount}</button>
                     </td>
                   );
