@@ -4,10 +4,8 @@ export default function DonateParty() {
   const amounts = [10, 20, 50];
   const amounts2 = [50, 250, 100];
  
-// className={isSelected ? "selected" : "btn btn-success"}
-const handleClick = (id) => {
-  
-  };
+
+
   return (
     <div className="home-container">
       <div className="donate-container">
