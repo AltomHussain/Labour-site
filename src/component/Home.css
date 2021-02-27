@@ -12,10 +12,10 @@
 .home {
   width: 100%;
 }
-.find-out{
-width: 100px;
-font-size: 20px;
-height: 20px;
+.find-out {
+  width: 100px;
+  font-size: 20px;
+  height: 20px;
 }
 .image-and-meet-sir {
   display: flex;
@@ -26,7 +26,6 @@ height: 20px;
 .meet-sir-container {
   margin-left: 5vw;
   margin-top: 15vw;
-
 }
 .home .container-1 .second-child {
   text-align: justify;
@@ -39,15 +38,14 @@ height: 20px;
 .sir-image {
   max-width: 90%;
 }
-.hand-made-hyphen{
+.hand-made-hyphen {
   background-color: red;
- font-size: 8px;
- padding-left: 30px;
- width: 9%;
-height: 7px;
-margin-right: 5px;
-align-self: center;
-
+  font-size: 8px;
+  padding-left: 30px;
+  width: 9%;
+  height: 7px;
+  margin-right: 5px;
+  align-self: center;
 }
 .find-local-mp {
   background-color: rgb(238, 224, 224);
@@ -157,14 +155,14 @@ align-self: center;
   padding-bottom: 10px;
   transition: 0.3s;
 }
-.renew:hover{
+.renew:hover {
   padding-bottom: 10px;
-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.access:hover{
+.access:hover {
   padding-bottom: 10px;
-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .become-child {
@@ -208,6 +206,31 @@ transition: 0.3s;
   position: sticky;
   top: 0;
 }
+/* Take action button children */
+.take-action-children {
+  display: none;
+}
+.btn-take-action:hover .take-action-children {
+  display: block;
+  position: absolute;
+  background-color: #e4003b;
+  color: white;
+  margin-top: 10px;
+  top: 40px;
+  border-radius: 5px;
+  margin-left: -13px;
+  list-style-type: none;
+  text-align: left; 
+   padding: 10px;
+}
+.take-action-children ul li:link {
+  text-decoration: none;
+
+}
+li {
+  list-style-type: none;
+
+}
 
 /* descktop view  and tablet*/
 @media only screen and (max-width: 1000px) {
@@ -216,8 +239,8 @@ transition: 0.3s;
     width: 100%;
     flex-direction: row;
 
-   margin-right: 10px;
-   margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .become-member {
     background-color: #e4003b;
@@ -264,7 +287,7 @@ transition: 0.3s;
     margin-right: 20px;
     margin-left: 25px;
   }
-  .hand-made-hyphen{
+  .hand-made-hyphen {
     display: none;
   }
 }
@@ -297,9 +320,8 @@ transition: 0.3s;
   }
   .questions {
     display: flex;
-   
   }
-   .hand-made-hyphen{
+  .hand-made-hyphen {
     display: none;
   }
 }
@@ -309,7 +331,6 @@ transition: 0.3s;
     display: flex;
     width: 80%;
     flex-direction: column;
- 
   }
 
   .become-member {
@@ -367,7 +388,7 @@ transition: 0.3s;
   .meet-sir-container {
     margin-bottom: 5vw;
   }
-   .hand-made-hyphen{
+  .hand-made-hyphen {
     display: none;
   }
 }
