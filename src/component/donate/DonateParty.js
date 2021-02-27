@@ -3,8 +3,6 @@ import "./Donate.css";
 export default function DonateParty() {
   const amounts = [10, 20, 50];
   const amounts2 = [50, 250, 100];
- 
-
 
   return (
     <div className="home-container">
@@ -16,21 +14,17 @@ export default function DonateParty() {
         />
 
         <div className="amount-to-donate">
-          <h2>Help fund our people powered movement. Donate now.</h2>
+          <h1>Help fund our people powered movement. Donate now.</h1>
 
           <table className="table">
             <tbody>
               <tr>
                 {amounts.map((amount, index) => {
                   return (
-                    <td
-                      key={index}
-                    >
-                      <button value={index}
-                      
-                      onClick={()=>handleClick(index)}
-                     className="btn btn-success"
-                      >£{amount}</button>
+                    <td key={index}>
+                      <button value={index} className="btn btn-success">
+                        £{amount}
+                      </button>
                     </td>
                   );
                 })}
@@ -47,18 +41,19 @@ export default function DonateParty() {
 
               <tr>
                 <td>
-                  <button >£1000</button>
+                  <button>£1000</button>
                 </td>
                 <td colspan="2">
                   <input
                     type="text"
                     placeholder="£ Other amount"
-                    className="form-control"
+                    className="form-control amount-input"
                   />
                 </td>
               </tr>
             </tbody>
           </table>
+          <button className="btn btn-success next form-control">Next</button>
         </div>
       </div>
 
