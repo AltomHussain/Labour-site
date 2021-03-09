@@ -5,24 +5,26 @@ export default function Footer() {
   const headings = Object.keys(HomeFooterInfo);
   const headingPragraphs = (paragrap) => HomeFooterInfo[paragrap];
 
-  let array = [];
-  console.log(array);
   return (
     <footer>
-      {headings.map((list, index) => {
-        return (
-          <div key={index} className="home-footer-info">
-            <ul>
-              <p>{list}</p>
-              <li>
-                {headingPragraphs(list).map((p) => (
-                  <li>{p}</li>
-                ))}
-              </li>
-            </ul>
-          </div>
-        );
-      })}
+      <div className="home-footer-info">
+        {headings.map((list, index) => {
+          return (
+            <div key={index} className="container-info">
+              <ul>
+                <p className="headings">{list}</p>
+                <li>
+                  {headingPragraphs(list).map((p, index) => (
+                    <li key={index} className="info">
+                      {p}
+                    </li>
+                  ))}
+                </li>
+              </ul>
+            </div>
+          );
+        })}
+      </div>
     </footer>
   );
 }
