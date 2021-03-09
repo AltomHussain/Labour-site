@@ -16,13 +16,35 @@ export default function Home() {
             <Link to="/join-labour">JOIN LABOUR</Link>
           </button>
           <button type="button" class="btn  btn-take-action">
-            <Link to="take-action">TAKE ACTION</Link>
+            TAKE ACTION
+            <div className="take-action-children">
+              <ul>
+                <li>
+                  <Link to="take-action" className="text-white">
+                    Find an event
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/volunteers" className="text-white">
+                    {" "}
+                    Volunteers
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://labour.org.uk/members/take-part/"
+                    className="text-white"
+                  >
+                    Take Part
+                  </a>
+                </li>
+              </ul>
+            </div>
           </button>
-          <button type="button" class="btn  btn-take-action">
-          <Link to="/volunteers"> Volunteers</Link>
-        </button>
+
           <button type="button" class="btn btn-donate-now">
-            DONATE NOW
+            <Link to="/donate-party">DONATE NOW</Link>
           </button>
         </div>
       </div>

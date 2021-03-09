@@ -1,27 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Donate.css";
 export default function DonateParty() {
+  const amounts = [10, 20, 50];
+  const amounts2 = [50, 250, 100];
+
   return (
     <div className="home-container">
       <div className="donate-container">
-          <img src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg" className="donate-logo" />
+        <img
+          src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg"
+          className="donate-logo"
+          alt="Labour_image"
+        />
+
         <div className="amount-to-donate">
-          <h2>Help fund our people powered movement. Donate now.</h2>
-          <div>
-            <button className="btn btn-success">£10</button>
-            <button className="btn btn-success">£20</button>
-            <button className="btn btn-success">£50</button>
-          </div>
-          <div>
-            <button className="btn btn-success">£50</button>
-            <button className="btn btn-success">£100</button>
-            <button className="btn btn-success">£250</button>
-          </div>
-          <div>
-            <button className="btn btn-success">£1000</button>
-            <input type="text" placeholder="£ Other amount" />
-          </div>
-          <button className="btn btn-success">Next</button>
+          <h1>Help fund our people powered movement. Donate now.</h1>
+
+          <table className="table">
+            <tbody>
+              <tr>
+                {amounts.map((amount, index) => {
+                  return (
+                    <td key={index}>
+                      <button value={index} className="btn btn-success">
+                        £{amount}
+                      </button>
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr>
+                {amounts2.map((amount, index) => {
+                  return (
+                    <td key={index}>
+                      <button className="btn btn-success">£{amount}</button>
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr>
+                <td>
+                  <button>£1000</button>
+                </td>
+                <td colspan="2">
+                  <input
+                    type="text"
+                    placeholder="£ Other amount"
+                    className="form-control amount-input"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button className="btn btn-success next form-control">Next</button>
         </div>
       </div>
 

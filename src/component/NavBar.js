@@ -42,6 +42,7 @@ export default function NavBar() {
                 </ul>
               </div>
             </li>
+            
             <li className="nav-item where-we-stand">
               <a className="nav-link active" href="https://www.google.co.uk/">
                 Where We Stand
