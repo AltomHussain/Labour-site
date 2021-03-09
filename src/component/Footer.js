@@ -1,32 +1,28 @@
 import React from "react";
-import HomeFooterInfo from "./HomeFooterInfo.json"
+import HomeFooterInfo from "./HomeFooterInfo";
 import "./Footer.css";
 export default function Footer() {
+  const headings = Object.keys(HomeFooterInfo);
+  const headingPragraphs = (paragrap) => HomeFooterInfo[paragrap];
 
-
-  // for(const key in testing){
-  //   console.log(`${key} ${testing[key]} `);
-  // }
-  // footerInfo.map((p) => console.log(p.test));
-  console.log(HomeFooterInfo);
+  let array = [];
+  console.log(array);
   return (
     <footer>
-    
-
-
-      <div className="fifth-container">
-        <span>
-          <strong> The Labour Party</strong>
-          <br></br>
-          Labour Central, Kings Manor<br></br>
-          Newcastle upon Tyne
-          <br></br> NE1 6PA <br></br>
-          <br></br>
-          Promoted by David Evans on behalf of the Labour Party, both at
-          Southside, 105 Victoria Street, London SW1E 6QT.
-          <br></br>
-        </span>
-      </div>
+      {headings.map((list, index) => {
+        return (
+          <div key={index} className="home-footer-info">
+            <ul>
+              <p>{list}</p>
+              <li>
+                {headingPragraphs(list).map((p) => (
+                  <li>{p}</li>
+                ))}
+              </li>
+            </ul>
+          </div>
+        );
+      })}
     </footer>
   );
 }
