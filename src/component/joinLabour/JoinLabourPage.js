@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import JoinFooter from "./JoinFooter";
 
@@ -42,21 +42,32 @@ export default function JoinLabourPage() {
     },
   ];
   return (
-    <div className="join-container">
+    <motion.div
+      className="join-container"
+      initial={{ scale: 0 }}
+      animate={{ rotate: 360, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 360,
+        damping: 80,
+      }}
+      // transition={{ duration: 1 }}
+    >
       <div className="header">
         <div className="join-header">
-         <a href="/"> <img
-            className="join-logo"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf21Pw1evcj1yLKcyc1HcCpElERJIoZ5dhOA&usqp=CAU"
-            alt="labour-logo"
-          /></a>
+          <a href="/">
+            {" "}
+            <img
+              className="join-logo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf21Pw1evcj1yLKcyc1HcCpElERJIoZ5dhOA&usqp=CAU"
+              alt="labour-logo"
+            />
+          </a>
         </div>
       </div>
 
       <div className="join-container">
-        <h1 className="join-h2">
-        Join the Labour Party
-        </h1>
+        <h1 className="join-h2">Join the Labour Party</h1>
         <p className="mb-5">Help us campaign for a fairer Britain</p>
         <h4 className="mb-4">Choose your membership rate</h4>
 
@@ -97,13 +108,13 @@ export default function JoinLabourPage() {
             >
               <div className="accordion-body">
                 <div className="available-price">
-                <p>
-                  Available for those aged 20 to 26, retired, unwaged, part-time
-                  workers or affiliated trade union members
-                </p>
-                <div className="price">
-                  £2.<small> 21</small> per month
-                </div>
+                  <p>
+                    Available for those aged 20 to 26, retired, unwaged,
+                    part-time workers or affiliated trade union members
+                  </p>
+                  <div className="price">
+                    £2.<small> 21</small> per month
+                  </div>
                 </div>
                 {recudeItems.map((item, index) => {
                   return (
@@ -132,8 +143,7 @@ export default function JoinLabourPage() {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Other
-                use react toastify in everypage
+                Other use react toastify in everypage
               </button>
             </h2>
             <div
@@ -143,7 +153,7 @@ export default function JoinLabourPage() {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                <div className="available-price" >
+                <div className="available-price">
                   Available for those aged 14-19, students and current or former
                   members of the British Armed Forces
                   <p className="ml-3">
@@ -180,6 +190,6 @@ export default function JoinLabourPage() {
       </div>
 
       <JoinFooter />
-    </div>
+    </motion.div>
   );
 }
