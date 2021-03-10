@@ -39,7 +39,9 @@ export default function TakeAction() {
               </ul>
             </div>
           </div>
-              <a className="mt-3 text-dark bg-white create-event" href="#">Create event</a>{" "}
+          <a className="mt-3 text-dark bg-white create-event" href="#">
+            Create event
+          </a>{" "}
         </nav>
       </header>
       <div className="take-action-container">
@@ -74,8 +76,8 @@ export default function TakeAction() {
         </div>
         <div className="second-container">
           <ul>
-            {footerItems.map((item) => (
-              <a href={item.link}>
+            {footerItems.map((item, index) => (
+              <a href={item.link} key={index}>
                 <li> {item.item}</li>
               </a>
             ))}

@@ -45,11 +45,11 @@ export default function JoinLabourPage() {
     <div className="join-container">
       <div className="header">
         <div className="join-header">
-          <img
+         <a href="/"> <img
             className="join-logo"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf21Pw1evcj1yLKcyc1HcCpElERJIoZ5dhOA&usqp=CAU"
             alt="labour-logo"
-          />
+          /></a>
         </div>
       </div>
 
