@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./JoinFooter.css";
 export default function JoinFooter() {
   const footerInfo = {
     "Terms and conditions": "https://labour.org.uk/terms-and-conditions/",
@@ -22,22 +22,29 @@ export default function JoinFooter() {
   return (
     <footer>
       <div className="join-footer-container">
-        <div className="first-col">
+        <div className="image-info-conatainer">
           <div>
             <img src="" alt="" />
           </div>
 
           <div className="link-containter">
-            {JoinFooterInfo.map((term, index) => {
-              return (
-                <a key={index} href={displayFooterInfo(term)} className="links">
-                  {term}
-                </a>
-              );
-            })}
+            <ul>
+              {JoinFooterInfo.map((term, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={displayFooterInfo(term)}
+                      className="links"
+                    >
+                      {term}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
 
-          <div>
+          <div className="powered-containter">
             <p className="powered">
               Powered and hosted by Tangent, a registered trading name of
               Tangent Marketing Services Limited, a company registered in
