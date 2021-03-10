@@ -81,3 +81,28 @@
 
 }
 }
+
+@media only screen and (max-width:700px ){
+ .join-footer-container{
+     display: flex;
+     flex-direction: column;
+ flex-wrap: wrap;
+ }   
+
+ .image-info-conatainer{
+     width: 70%;
+ }
+ .feedback-container {
+  background-color: plum;
+  margin-top: 50px;
+  width: 70%;
+}
+
+.social-container {
+  background-color: powderblue;
+  width: 70%;
+  margin-top: 40px;
+
+}
+}
+
