@@ -7,6 +7,7 @@
 
 .image-info-conatainer {
   width: 27%;
+  background-color: green;
 }
 .link-containter {
   display: flex;
@@ -32,19 +33,27 @@
   font-size: 11px;
 }
 .feedback-container {
+  background-color: plum;
   margin-top: 50px;
   width: 26%;
 }
-
+.feedback-container li {
+  font-size: 12px;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
 .social-container {
-    width: 26%;
-    margin-top:40px ;
-    
+  background-color: powderblue;
+  width: 26%;
+  margin-top: 40px;
+
 }
 .social-items {
   font-size: 12px;
   color: white;
   text-decoration: underline;
+  margin-left: 20px;
 }
 .social-items a {
   color: white;

@@ -57,7 +57,7 @@ export default function JoinFooter() {
             </p>
           </div>
         </div>
-        <div className="feedback-container">Send us feedback</div>
+        <div className="feedback-container"><li>Send us feedback</li></div>
         <div className="social-container">
           <ul>
             {socialMediaInfo.map((term, index) => (
