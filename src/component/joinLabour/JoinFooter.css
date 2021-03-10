@@ -58,3 +58,26 @@
 .social-items a {
   color: white;
 }
+@media only screen and (max-width:900px ){
+ .join-footer-container{
+     display: flex;
+     flex-direction: column;
+ flex-wrap: wrap;
+ }   
+
+ .image-info-conatainer{
+     width: 50%;
+ }
+ .feedback-container {
+  background-color: plum;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.social-container {
+  background-color: powderblue;
+  width: 50%;
+  margin-top: 40px;
+
+}
+}
