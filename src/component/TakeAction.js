@@ -20,11 +20,13 @@ export default function TakeAction() {
     <div>
       <header className="take-action-header">
         <nav className=" take-action-nav navbar-expand-lg navbar-light ">
-          <img
-            className="navbar-brand"
-            src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
-            alt="labout logo"
-          />
+          <a href="/">
+            <img
+              className="navbar-brand"
+              src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
+              alt="labout logo"
+            />
+          </a>
           <div>
             <div>
               <ul className="navbar-nav mt-3 mr-auto">
@@ -71,20 +73,16 @@ export default function TakeAction() {
             <img src="logo here" alt="labout logo" />
             <p>
               Copyright Labour All rights reserved. <br></br>
-               Promoted by David Evans on
-              behalf of the Labour Party<br></br>
-               both at Southside, 105 Victoria Street,
-              London SW1E 6QT.
+              Promoted by David Evans on behalf of the Labour Party<br></br>
+              both at Southside, 105 Victoria Street, London SW1E 6QT.
             </p>
           </div>
           <div className="footer-second-child">
-            <ul>
-              {footerItems.map((item, index) => (
-                <a href={item.link} key={index}>
-                  <li> {item.item}</li>
-                </a>
-              ))}
-            </ul>
+            {footerItems.map((item, index) => (
+              <a href={item.link} key={index}>
+                <li> {item.item}</li>
+              </a>
+            ))}
           </div>
         </div>
       </footer>
