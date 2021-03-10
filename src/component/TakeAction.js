@@ -41,7 +41,7 @@ export default function TakeAction() {
           </div>
           <a className="mt-3 text-dark bg-white create-event" href="#">
             Create event
-          </a>{" "}
+          </a>
         </nav>
       </header>
       <div className="take-action-container">
@@ -66,22 +66,26 @@ export default function TakeAction() {
       </div>
 
       <footer>
-        <div className="first-container">
-          <img src="logo here" alt="labout logo" />
-          <p>
-            Copyright Labour All rights reserved. Promoted by David Evans on
-            behalf of the Labour Party both at Southside, 105 Victoria Street,
-            London SW1E 6QT.
-          </p>
-        </div>
-        <div className="second-container">
-          <ul>
-            {footerItems.map((item, index) => (
-              <a href={item.link} key={index}>
-                <li> {item.item}</li>
-              </a>
-            ))}
-          </ul>
+        <div className="tack-action-footer-container">
+          <div className="footer-first-child">
+            <img src="logo here" alt="labout logo" />
+            <p>
+              Copyright Labour All rights reserved. <br></br>
+               Promoted by David Evans on
+              behalf of the Labour Party<br></br>
+               both at Southside, 105 Victoria Street,
+              London SW1E 6QT.
+            </p>
+          </div>
+          <div className="footer-second-child">
+            <ul>
+              {footerItems.map((item, index) => (
+                <a href={item.link} key={index}>
+                  <li> {item.item}</li>
+                </a>
+              ))}
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

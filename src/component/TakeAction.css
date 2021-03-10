@@ -51,6 +51,22 @@
   width: 100%;
   height: auto;
 }
+/* Footer styling */
+.tack-action-footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
+}
+.footer-first-child {
+  width: 30%;
+}
+.footer-first-child p {
+  font-size: 13px;
+}
+.footer-second-child {
+  width: 10%;
+}
 @media only screen and (max-width: 800px) {
   .search-container {
     background-color: white;
