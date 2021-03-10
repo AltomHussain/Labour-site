@@ -7,7 +7,6 @@
 
 .image-info-conatainer {
   width: 27%;
-  background-color: green;
 }
 .link-containter {
   display: flex;
@@ -33,7 +32,7 @@
   font-size: 11px;
 }
 .feedback-container {
-  background-color: plum;
+ 
   margin-top: 50px;
   width: 26%;
 }
@@ -44,7 +43,7 @@
   text-align: center;
 }
 .social-container {
-  background-color: powderblue;
+
   width: 26%;
   margin-top: 40px;
 
@@ -69,13 +68,11 @@
      width: 50%;
  }
  .feedback-container {
-  background-color: plum;
   margin-top: 50px;
   width: 50%;
 }
 
 .social-container {
-  background-color: powderblue;
   width: 50%;
   margin-top: 40px;
 
@@ -93,16 +90,37 @@
      width: 70%;
  }
  .feedback-container {
-  background-color: plum;
+
   margin-top: 50px;
   width: 70%;
 }
 
 .social-container {
-  background-color: powderblue;
+
   width: 70%;
   margin-top: 40px;
 
 }
 }
 
+@media only screen and (max-width:500px ){
+ .join-footer-container{
+     display: flex;
+     flex-direction: column;
+ flex-wrap: wrap;
+ }   
+
+ .image-info-conatainer{
+     width: 100%;
+ }
+ .feedback-container {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.social-container {
+  width: 100%;
+  margin-top: 40px;
+
+}
+}
