@@ -66,6 +66,12 @@
 }
 .footer-second-child {
   width: 10%;
+  text-align: right;
+ 
+}
+.footer-second-child  ul li{
+   font-size: 11px;
+   color: white;
 }
 @media only screen and (max-width: 800px) {
   .search-container {
