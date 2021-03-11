@@ -1,6 +1,12 @@
 import React from "react";
 import "./Volunteers.css";
 export default function Volunteers() {
+    const footerItems = [
+      { item: "Join", link: "" },
+      { item: "Donate", link: "" },
+      { item: "Volunteer", link: "" },
+      { item: "Privacy Policy", link: "https://labour.org.uk/cookie-policy/" },
+    ];
   return (
     <div className="volunteers-container">
       <header className="bg-danger volunteers-header">
@@ -58,10 +64,25 @@ export default function Volunteers() {
         <button className="btn btn-sign-up form-control my-2">Sign Up</button>
       </div>
 
-      <footer>
-        it is the same as take action footer so just refactor it and make it
-        reusable
-      </footer>
+   <footer>
+        <div className="tack-action-footer-container">
+          <div className="footer-first-child">
+            <img src="logo here" alt="labout logo" />
+            <p>
+              Copyright Labour All rights reserved. <br></br>
+              Promoted by David Evans on behalf of the Labour Party<br></br>
+              both at Southside, 105 Victoria Street, London SW1E 6QT.
+            </p>
+          </div>
+          <div className="footer-second-child">
+            {footerItems.map((item, index) => (
+              <a href={item.link} key={index}>
+                <li> {item.item}</li>
+              </a>
+            ))}
+          </div>
+        </div>
+        </footer>
     </div>
   );
 }
