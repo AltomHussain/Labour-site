@@ -10,7 +10,7 @@ export default function Volunteers() {
   return (
     <div className="volunteers-container">
       <header className="bg-danger volunteers-header">
-        <img src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg" />
+      <a href="/"> <img src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg" alt="Labour logo" /></a> 
       </header>
 
       <div className="sign-up-container form-group">

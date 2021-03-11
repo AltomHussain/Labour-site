@@ -58,19 +58,22 @@ export default function DonateParty() {
       </div>
 
       <footer>
-        <div>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Disability Access</a>
-        </div>
-        <div>
-          <p>
-            Copyright Labour Party. All rights reserved. Promoted by David Evans
-            on behalf of the Labour Party both at Southside, 105 Victoria
-            Street, London SW1E 6QT. The Labour Party will place cookies on your
-            computer to help us make this website better. To find out more about
-            these cookies, see our
-          </p>
-          <a href="#">Policy notice</a>
+        <div className="donate-footer-container">
+          <div className="terms-container">
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Disability Access</a>
+          </div>
+          <div className="copy-right-container"> 
+            <p>
+              Copyright Labour Party. All rights reserved. Promoted by David
+              Evans on behalf of the Labour Party both at Southside, 105
+              Victoria Street, London SW1E 6QT. The Labour Party will place
+              cookies on your computer to help us make this website better. To
+              find out more about these cookies, see our
+            </p>
+            <div className="policy-note">    <a href="#">Policy notice</a></div>
+        
+          </div>
         </div>
       </footer>
     </div>
