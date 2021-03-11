@@ -1,16 +1,24 @@
 import React from "react";
+import LogoImages from "./LogoImages";
 import "./Volunteers.css";
 export default function Volunteers() {
-    const footerItems = [
-      { item: "Join", link: "" },
-      { item: "Donate", link: "" },
-      { item: "Volunteer", link: "" },
-      { item: "Privacy Policy", link: "https://labour.org.uk/cookie-policy/" },
-    ];
+  const footerItems = [
+    { item: "Join", link: "" },
+    { item: "Donate", link: "" },
+    { item: "Volunteer", link: "" },
+    { item: "Privacy Policy", link: "https://labour.org.uk/cookie-policy/" },
+  ];
   return (
     <div className="volunteers-container">
       <header className="bg-danger volunteers-header">
-      <a href="/"> <img src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg" alt="Labour logo" /></a> 
+        <LogoImages
+          image={
+            <img
+              src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
+              alt="Labour logo"
+            />
+          }
+        />
       </header>
 
       <div className="sign-up-container form-group">
@@ -64,7 +72,7 @@ export default function Volunteers() {
         <button className="btn btn-sign-up form-control my-2">Sign Up</button>
       </div>
 
-   <footer>
+      <footer>
         <div className="tack-action-footer-container">
           <div className="footer-first-child">
             <img src="logo here" alt="labout logo" />
@@ -82,7 +90,7 @@ export default function Volunteers() {
             ))}
           </div>
         </div>
-        </footer>
+      </footer>
     </div>
   );
 }

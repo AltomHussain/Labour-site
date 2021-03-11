@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import JoinFooter from "./JoinFooter";
 
 import "./JoinLabourPage.css";
+import LogoImages from "../LogoImages";
 export default function JoinLabourPage() {
   const recudeItems = [
     {
@@ -55,14 +56,15 @@ export default function JoinLabourPage() {
     >
       <div className="header">
         <div className="join-header">
-          <a href="/">
-            {" "}
-            <img
-              className="join-logo"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf21Pw1evcj1yLKcyc1HcCpElERJIoZ5dhOA&usqp=CAU"
-              alt="labour-logo"
-            />
-          </a>
+          <LogoImages
+            image={
+              <img
+                className="join-logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf21Pw1evcj1yLKcyc1HcCpElERJIoZ5dhOA&usqp=CAU"
+                alt="labour-logo"
+              />
+            }
+          />
         </div>
       </div>
 

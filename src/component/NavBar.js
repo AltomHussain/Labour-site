@@ -1,17 +1,21 @@
 import React from "react";
+import LogoImages from "./LogoImages";
 import "./NavBar.css";
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="https://www.google.co.uk/">
-          <img
-            src="https://s3.eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2015/05/labour-logo-1002x203.gif
+        <LogoImages
+          image={
+            <img
+              src="https://s3.eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2015/05/labour-logo-1002x203.gif
 "
-            className="img-fluid"
-            alt="..."
-          />
-        </a>
+              className="img-fluid"
+              alt="labour logo"
+            />
+          }
+        />
+
         <button
           className="navbar-toggler"
           type="button"
@@ -42,7 +46,7 @@ export default function NavBar() {
                 </ul>
               </div>
             </li>
-            
+
             <li className="nav-item where-we-stand">
               <a className="nav-link active" href="https://www.google.co.uk/">
                 Where We Stand

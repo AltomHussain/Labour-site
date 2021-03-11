@@ -1,4 +1,5 @@
 import React from "react";
+import LogoImages from "./LogoImages";
 import "./TakeAction.css";
 export default function TakeAction() {
   const navItems = [
@@ -20,13 +21,15 @@ export default function TakeAction() {
     <div>
       <header className="take-action-header">
         <nav className=" take-action-nav navbar-expand-lg navbar-light ">
-          <a href="/">
-            <img
-              className="navbar-brand"
-              src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
-              alt="labout logo"
-            />
-          </a>
+          <LogoImages
+            image={
+              <img
+                className="navbar-brand"
+                src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
+                alt="labout logo"
+              />
+            }
+          />
           <div>
             <div>
               <ul className="navbar-nav mt-3 mr-auto">

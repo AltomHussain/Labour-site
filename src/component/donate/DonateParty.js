@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LogoImages from "../LogoImages";
 import "./Donate.css";
 export default function DonateParty() {
   const amounts = [10, 20, 50];
@@ -7,12 +8,15 @@ export default function DonateParty() {
   return (
     <div className="home-container">
       <div className="donate-container">
-        <img
-          src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg"
-          className="donate-logo"
-          alt="Labour_image"
+        <LogoImages
+          image={
+            <img
+              src="https://i2-prod.mirror.co.uk/incoming/article6405837.ece/ALTERNATES/s1200/Labour-Party-Logo.jpg"
+              className="donate-logo"
+              alt="Labour_image"
+            />
+          }
         />
-
         <div className="amount-to-donate">
           <h1>Help fund our people powered movement. Donate now.</h1>
 
@@ -63,7 +67,7 @@ export default function DonateParty() {
             <a href="#">Terms and Conditions</a>
             <a href="#">Disability Access</a>
           </div>
-          <div className="copy-right-container"> 
+          <div className="copy-right-container">
             <p>
               Copyright Labour Party. All rights reserved. Promoted by David
               Evans on behalf of the Labour Party both at Southside, 105
@@ -71,8 +75,10 @@ export default function DonateParty() {
               cookies on your computer to help us make this website better. To
               find out more about these cookies, see our
             </p>
-            <div className="policy-note">    <a href="#">Policy notice</a></div>
-        
+            <div className="policy-note">
+              {" "}
+              <a href="#">Policy notice</a>
+            </div>
           </div>
         </div>
       </footer>
