@@ -62,7 +62,11 @@ export default function DonateParty() {
               </tr>
             </tbody>
           </table>
-          <button className="btn btn-success next form-control">Next</button>
+          <motion.button className="btn btn-success next form-control"
+          initial={{x:'70vw', y: '-10vw'}}
+          animate={{x: 0, y:0}}
+          transition={{type: 'spring', delay: 1, duration:1}}
+          >Next</motion.button>
         </motion.div>
       </div>
 
