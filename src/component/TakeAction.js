@@ -1,5 +1,6 @@
 import React from "react";
 import LogoImages from "./LogoImages";
+import { motion } from "framer-motion";
 import "./TakeAction.css";
 export default function TakeAction() {
   const navItems = [
@@ -51,7 +52,12 @@ export default function TakeAction() {
       </header>
       <div className="take-action-container">
         <div className="main-container">
-          <div className="search-container">
+          <motion.div
+            initial={{ y: "-50vw" }}
+            animate={{ y: 0 }}
+            transition={{type: 'spring', delay: 0.1, duration: 1}}
+            className="search-container"
+          >
             <h4>Find a Labour campaign event near me</h4>
             <input
               type="text"
@@ -59,7 +65,7 @@ export default function TakeAction() {
               placeholder="Search for postcode or constituency"
             />
             <button className=" btn-search form-control my-3">Search</button>
-          </div>
+          </motion.div>
           <div className="image-container">
             <img
               className="my-3"
