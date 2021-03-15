@@ -115,7 +115,7 @@ export default function Home() {
 
       <div className="movement">
         <div className="questions row">
-          {/* <div className=" ml-3 become-and-join"> */}
+    
 
           <div className="become-member ">
             <span className="become-child">
@@ -135,9 +135,7 @@ export default function Home() {
             </span>
           </div>
 
-          {/* </div> */}
-
-          {/* <div className="renew-and-access ml-3"> */}
+        
           <div className="renew">
             <span className="renew-child">
               <p className="">
@@ -157,7 +155,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* </div> */}
 
         <div className="people-powered">
           <div className="d-flex">

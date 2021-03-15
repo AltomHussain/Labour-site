@@ -1,4 +1,5 @@
 import React from "react";
+import LogoImages from "./LogoImages";
 import "./TakeAction.css";
 export default function TakeAction() {
   const navItems = [
@@ -20,10 +21,14 @@ export default function TakeAction() {
     <div>
       <header className="take-action-header">
         <nav className=" take-action-nav navbar-expand-lg navbar-light ">
-          <img
-            className="navbar-brand"
-            src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
-            alt="labout logo"
+          <LogoImages
+            image={
+              <img
+                className="navbar-brand"
+                src="https://www.labourinternational.net/wp-content/uploads/sites/70/2019/11/LabourLogoRedBackground-1200x630-c-center.jpg"
+                alt="labout logo"
+              />
+            }
           />
           <div>
             <div>
@@ -39,7 +44,9 @@ export default function TakeAction() {
               </ul>
             </div>
           </div>
-              <a className="mt-3 text-dark bg-white create-event" href="#">Create event</a>{" "}
+          <a className="mt-3 text-dark bg-white create-event" href="#">
+            Create event
+          </a>
         </nav>
       </header>
       <div className="take-action-container">
@@ -64,22 +71,22 @@ export default function TakeAction() {
       </div>
 
       <footer>
-        <div className="first-container">
-          <img src="logo here" alt="labout logo" />
-          <p>
-            Copyright Labour All rights reserved. Promoted by David Evans on
-            behalf of the Labour Party both at Southside, 105 Victoria Street,
-            London SW1E 6QT.
-          </p>
-        </div>
-        <div className="second-container">
-          <ul>
-            {footerItems.map((item) => (
-              <a href={item.link}>
+        <div className="tack-action-footer-container">
+          <div className="footer-first-child">
+            <img src="logo here" alt="labout logo" />
+            <p>
+              Copyright Labour All rights reserved. <br></br>
+              Promoted by David Evans on behalf of the Labour Party<br></br>
+              both at Southside, 105 Victoria Street, London SW1E 6QT.
+            </p>
+          </div>
+          <div className="footer-second-child">
+            {footerItems.map((item, index) => (
+              <a href={item.link} key={index}>
                 <li> {item.item}</li>
               </a>
             ))}
-          </ul>
+          </div>
         </div>
       </footer>
     </div>
