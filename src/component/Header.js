@@ -1,19 +1,23 @@
 import React from "react";
 import "./Header.css";
-
+import {motion} from "framer-motion"
 export default function Header() {
   return (
     <header>
       {/* Here */}
-
 
       <div className="jumbotron">
         <div className="header-view">
           <div className="title-container">
             <h1>A New Leadership</h1>
           </div>
-          <div className="form-container">
-            {/* <form> */}
+          {/* <form> */}
+          <motion.div
+            className="form-container"
+            initial={{ x: "50vw", y: "10vw" }}
+            animate={{ x: 0 , y: "3vw"}}
+            transition={{ type: "spring", delay: 1, duration: 1 }}
+          >
             <p className="text-center text-white">GET THE LATEST FROM LABOUR</p>
             <input
               type="text"
@@ -34,7 +38,6 @@ export default function Header() {
               type="submit"
               className="btn btn-danger form-control mt-2 text-white"
             >
-
               KEEP ME UPDATED
             </button>
             <p className="form-text">
@@ -53,19 +56,16 @@ export default function Header() {
               </a>
             </p>
             {/* </form> */}
-          </div>
+          </motion.div>
         </div>
         <div className="dow-arrow">
           <a href="#home" className="text-white">
             {" "}
             <i class="fas fa-angle-double-down"></i>
-          
-          <i class="fas fa-angle-double-down"></i>
+            <i class="fas fa-angle-double-down"></i>
           </a>
         </div>
       </div>
-
-      
     </header>
   );
 }

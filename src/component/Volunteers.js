@@ -22,10 +22,11 @@ export default function Volunteers() {
         />
       </header>
 
-      <motion.div className="sign-up-container form-group"
-      initial={{x: '70vw'}}
-      animate={{x: 0}}
-      transition={{type:'spring' ,delay: 0, duration: 5, stiffness: 100}}
+      <motion.div
+        className="sign-up-container form-group"
+        initial={{ x: "70vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", delay: 0, duration: 5, stiffness: 100 }}
       >
         <h2>Sign up to volunteer with Labour</h2>
         <h3>With your help we'll build a Britain for the many, not the few.</h3>
@@ -74,7 +75,14 @@ export default function Volunteers() {
             Find out more about how we use your information.
           </a>
         </p>
-        <button className="btn btn-sign-up form-control my-2">Sign Up</button>
+        <motion.button
+          className="btn btn-sign-up form-control my-2"
+          initial={{ y: "50vw" }}
+          animate={{ y: 0 }}
+          transition={{type: 'spring', delay: 0.5, duration: 1}}
+        >
+          Sign Up
+        </motion.button>
       </motion.div>
 
       <footer>

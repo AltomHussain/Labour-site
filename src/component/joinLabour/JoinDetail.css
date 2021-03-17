@@ -1,0 +1,9 @@
+.join-detail-container{
+
+    width: 40%;
+    display: flex;
+    margin: 30px auto;
+}
+.join-detail-container input{
+    margin-bottom: 20px;
+}

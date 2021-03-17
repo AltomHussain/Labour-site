@@ -64,7 +64,9 @@ export default function TakeAction() {
               className="form-control my-3"
               placeholder="Search for postcode or constituency"
             />
-            <button className=" btn-search form-control my-3">Search</button>
+            <button className=" btn-search form-control my-3"
+          
+            >Search</button>
           </motion.div>
           <div className="image-container">
             <img
