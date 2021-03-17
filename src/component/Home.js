@@ -2,12 +2,23 @@ import React from "react";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Footer from "./Footer";
+import {motion} from "framer-motion"
 import "./Home.css";
 import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <div className="home-container">
-      <div className="phone-view-nav">
+    <motion.div
+      className="home-container"
+      initial={{opacity: 0  }}
+      animate={{opacity:1  }}
+      transition={{ type: "spring", delay: 0.1, duration: 5 }}
+    >
+      <motion.div
+        className="phone-view-nav"
+        initial={{ y: "-10vw" }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", delay: 1.2, duration: 1 }}
+      >
         <div className="phone-nav">
           <NavBar />
         </div>
@@ -47,7 +58,7 @@ export default function Home() {
             <Link to="/donate-party">DONATE NOW</Link>
           </button>
         </div>
-      </div>
+      </motion.div>
       <Header />
 
       <div className="home" id="home">
@@ -115,8 +126,6 @@ export default function Home() {
 
       <div className="movement">
         <div className="questions row">
-    
-
           <div className="become-member ">
             <span className="become-child">
               <p className="">
@@ -135,7 +144,6 @@ export default function Home() {
             </span>
           </div>
 
-        
           <div className="renew">
             <span className="renew-child">
               <p className="">
@@ -154,7 +162,6 @@ export default function Home() {
             </span>
           </div>
         </div>
-
 
         <div className="people-powered">
           <div className="d-flex">
@@ -176,6 +183,6 @@ export default function Home() {
       </div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }

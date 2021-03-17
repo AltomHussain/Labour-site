@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LogoImages from "../LogoImages";
+import {motion} from "framer-motion"
 import "./Donate.css";
 export default function DonateParty() {
   const amounts = [10, 20, 50];
@@ -17,7 +18,11 @@ export default function DonateParty() {
             />
           }
         />
-        <div className="amount-to-donate">
+        <motion.div className="amount-to-donate"
+        initial={{y: '100vw'}}
+        animate={{y:0}}
+        transition={{type: 'spring', duration: 3}}
+        >
           <h1>Help fund our people powered movement. Donate now.</h1>
 
           <table className="table">
@@ -57,8 +62,12 @@ export default function DonateParty() {
               </tr>
             </tbody>
           </table>
-          <button className="btn btn-success next form-control">Next</button>
-        </div>
+          <motion.button className="btn btn-success next form-control"
+          initial={{x:'70vw', y: '-10vw'}}
+          animate={{x: 0, y:0}}
+          transition={{type: 'spring', delay: 1, duration:1}}
+          >Next</motion.button>
+        </motion.div>
       </div>
 
       <footer>

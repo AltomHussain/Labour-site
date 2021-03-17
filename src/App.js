@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import DonateParty from "./component/donate/DonateParty"
 import HomeJoin from "./component/joinLabour/HomeJoin";
 import Volunteers from "./component/Volunteers";
-
+import JoinDetail from "../src/component/joinLabour/JoinDetail"
 function App() {
   return (
     <Router>
@@ -17,7 +17,7 @@ function App() {
 
         <Route exact path="/take-action" component={TakeAction} />
         <Route path="/volunteers" component={Volunteers} />
-
+        <Route exact path="/join-detail" component={JoinDetail} />
       </Switch>
     </Router>
   );

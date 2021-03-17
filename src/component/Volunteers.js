@@ -1,6 +1,8 @@
 import React from "react";
 import LogoImages from "./LogoImages";
 import "./Volunteers.css";
+import {motion} from "framer-motion"
+import { Alert } from "./Alert";
 export default function Volunteers() {
   const footerItems = [
     { item: "Join", link: "" },
@@ -21,7 +23,12 @@ export default function Volunteers() {
         />
       </header>
 
-      <div className="sign-up-container form-group">
+      <motion.div
+        className="sign-up-container form-group"
+        initial={{ x: "70vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", delay: 0, duration: 5, stiffness: 100 }}
+      >
         <h2>Sign up to volunteer with Labour</h2>
         <h3>With your help we'll build a Britain for the many, not the few.</h3>
         <div className="main-form ">
@@ -69,8 +76,16 @@ export default function Volunteers() {
             Find out more about how we use your information.
           </a>
         </p>
-        <button className="btn btn-sign-up form-control my-2">Sign Up</button>
-      </div>
+        <motion.button
+          className="btn btn-sign-up form-control my-2"
+          initial={{ y: "50vw" }}
+          animate={{ y: 0 }}
+          transition={{type: 'spring', delay: 0.5, duration: 1}}
+          onClick={Alert}
+        >
+          Sign Up
+        </motion.button>
+      </motion.div>
 
       <footer>
         <div className="tack-action-footer-container">
