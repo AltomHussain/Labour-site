@@ -5,6 +5,7 @@ import JoinFooter from "./JoinFooter";
 
 import "./JoinLabourPage.css";
 import LogoImages from "../LogoImages";
+import { Alert } from "../Alert";
 export default function JoinLabourPage() {
   const recudeItems = [
     {
@@ -185,7 +186,7 @@ export default function JoinLabourPage() {
           <hr className="col my-5" />
         </div>
         <div className="already-member">
-          <Link to="/already-member">
+          <Link onClick={Alert}>
             I am already a member. Renew membership{" "}
           </Link>
         </div>

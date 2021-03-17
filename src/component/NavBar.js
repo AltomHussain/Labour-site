@@ -1,7 +1,9 @@
 import React from "react";
 import LogoImages from "./LogoImages";
 import "./NavBar.css";
+import {Alert} from "./Alert"
 export default function NavBar() {
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -94,7 +96,7 @@ export default function NavBar() {
               </div>
             </li>
           </ul>
-          <form className="d-flex">
+          <form className="d-flex" onSubmit={Alert}>
             <input
               className="form-control me-2"
               type="search"

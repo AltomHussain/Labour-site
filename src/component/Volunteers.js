@@ -2,6 +2,7 @@ import React from "react";
 import LogoImages from "./LogoImages";
 import "./Volunteers.css";
 import {motion} from "framer-motion"
+import { Alert } from "./Alert";
 export default function Volunteers() {
   const footerItems = [
     { item: "Join", link: "" },
@@ -80,6 +81,7 @@ export default function Volunteers() {
           initial={{ y: "50vw" }}
           animate={{ y: 0 }}
           transition={{type: 'spring', delay: 0.5, duration: 1}}
+          onClick={Alert}
         >
           Sign Up
         </motion.button>

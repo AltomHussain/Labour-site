@@ -2,6 +2,8 @@ import React from "react";
 import LogoImages from "./LogoImages";
 import { motion } from "framer-motion";
 import "./TakeAction.css";
+import { Alert } from "./Alert";
+
 export default function TakeAction() {
   const navItems = [
     { id: 1, item: " Donate", icon: "fas fa-gift" },
@@ -45,7 +47,11 @@ export default function TakeAction() {
               </ul>
             </div>
           </div>
-          <a className="mt-3 text-dark bg-white create-event" href="#">
+          <a
+            className="mt-3 text-dark bg-white create-event"
+            href="#"
+            onClick={Alert}
+          >
             Create event
           </a>
         </nav>
@@ -55,7 +61,7 @@ export default function TakeAction() {
           <motion.div
             initial={{ y: "-50vw" }}
             animate={{ y: 0 }}
-            transition={{type: 'spring', delay: 0.1, duration: 1}}
+            transition={{ type: "spring", delay: 0.1, duration: 1 }}
             className="search-container"
           >
             <h4>Find a Labour campaign event near me</h4>
@@ -64,9 +70,9 @@ export default function TakeAction() {
               className="form-control my-3"
               placeholder="Search for postcode or constituency"
             />
-            <button className=" btn-search form-control my-3"
-          
-            >Search</button>
+            <button className=" btn-search form-control my-3" onClick={Alert}>
+              Search
+            </button>
           </motion.div>
           <div className="image-container">
             <img

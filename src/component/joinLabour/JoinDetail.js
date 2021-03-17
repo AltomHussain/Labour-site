@@ -2,6 +2,7 @@ import React from "react";
 import JoinFooter from "./JoinFooter";
 import "./JoinDetail.css"
 import LogoImages from "../LogoImages"
+import { Alert } from "../Alert";
 export default function JoinDetail() {
   let Address = [
     "Country",
@@ -103,7 +104,10 @@ export default function JoinDetail() {
                   placeholder="Postcode"
                   className="form-control"
                 />
-                <button className="btn btn-success form-control">
+                <button
+                  className="btn btn-success form-control"
+                  onClick={Alert}
+                >
                   Find Address
                 </button>
               </div>
@@ -138,7 +142,9 @@ export default function JoinDetail() {
               </p>
             </div>
           </div>
-          <button className="btn btn-success form-control">Next</button>
+          <button className="btn btn-success form-control" onClick={Alert}>
+            Next
+          </button>
         </form>
       </div>
       <JoinFooter />
