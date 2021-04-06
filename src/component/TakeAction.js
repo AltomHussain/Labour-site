@@ -49,7 +49,7 @@ export default function TakeAction() {
           </div>
           <a
             className="mt-3 text-dark bg-white create-event"
-            href="#"
+            href="kds;dk"
             onClick={Alert}
           >
             Create event
